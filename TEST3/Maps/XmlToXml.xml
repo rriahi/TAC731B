@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<root t='190' id='1' V190='11' inStruct='Structures/Simplexml.xml' outStruct='Structures/Simplexml.xml' inputRep='172' outputRep='172' nextMap='' inputStructUserName='Simplexml' outputStructUserName='Simplexml' V1='4' name='XmlToXml' incarnation='474'>
-  <inputMapElem t='200' id='2' V200='7' input='true' shown='5' structElemExists='true' V283='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_io='true' V1='4' name='root'>
+<root t='190' id='1' V190='11' inStruct='Structures/Simplexml.xml' outStruct='Structures/Simplexml.xml' inputRep='172' outputRep='172' nextMap='' inputStructUserName='Simplexml' outputStructUserName='Simplexml' V1='4' name='XmlToXml' incarnation='494'>
+  <inputMapElem t='200' id='2' V200='8' input='true' structElemExists='true' usedCount='8' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_io='true' V1='4' name='root'>
     <mapNode t='190' idref='1'/>
-    <repRuntime t='692' id='3' V692='1' V690='1'>
+    <repRuntime t='692' id='11' V692='1' V690='1'>
     </repRuntime>
     <io>ReadURL([repName="XML",url="${readHeader}"],{Start Offset},{Length})</io>
-    <child t='200' id='4' V200='7' input='true' shown='5' structElemExists='true' V283='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='el'>
+    <child t='200' id='4' V200='8' input='true' structElemExists='true' usedCount='3' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='el'>
       <mapNode t='190' idref='1'/>
     </child>
   </inputMapElem>
-  <outputMapElem t='200' id='5' V200='7' shown='5' structElemExists='true' V283='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' modifiedFromParent_io='true' V1='4' name='root'>
+  <outputMapElem t='200' id='5' V200='8' structElemExists='true' usedCount='9' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' modifiedFromParent_io='true' V1='4' name='root'>
     <mapNode t='190' idref='1'/>
-    <repRuntime t='692' idref='3'/>
+    <repRuntime t='692' idref='11'/>
     <loop>SimpleLoop([autoAdded="true"],in$/root,{Filter},{Sort Keys},{Contexts})</loop>
     <io>WriteURL([repName="XML",url="${writeHeader}"],{URL})</io>
-    <child t='200' id='6' V200='7' shown='5' structElemExists='true' V283='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='el'>
+    <child t='200' id='6' V200='8' structElemExists='true' usedCount='4' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='el'>
       <mapNode t='190' idref='1'/>
       <value>in$/root/el</value>
     </child>
   </outputMapElem>
-  <inputRepRuntime t='692' idref='3'/>
-  <outputRepRuntime t='692' idref='3'/>
+  <inputRepRuntime t='692' idref='11'/>
+  <outputRepRuntime t='692' idref='11'/>
   <valueSets></valueSets>
-  <inputXmlRepRuntime t='692' idref='3'/>
-  <outputXmlRepRuntime t='692' idref='3'/>
+  <inputXmlRepRuntime t='692' idref='11'/>
+  <outputXmlRepRuntime t='692' idref='11'/>
   <child t='165' id='7' V1='4' name='Document Bindings'>
     <child t='166' id='8' V166='5' docType='1' V1='4' name='in$/root'>
       <elemNode t='200' idref='2'/>
