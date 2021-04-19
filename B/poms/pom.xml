@@ -12,6 +12,7 @@
     <module>../../TEST3/poms</module>
     <module>code/beans</module>
     <module>code/routines</module>
+    <module>jobs/process/tes_0.1</module>
   </modules>
   <properties>
     <signer.version>7.3.1-SNAPSHOT</signer.version>
