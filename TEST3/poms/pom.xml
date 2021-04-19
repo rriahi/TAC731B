@@ -9,6 +9,7 @@
   <name>TEST3 Codes Master</name>
   <url>http://www.talend.org/</url>
   <modules>
+    <module>jobs/process/di_0.1</module>
     <module>jobs/process/publish/tup_t7139_checkrelease_routewithcmaptest_0.1</module>
     <module>jobs/routes/tup_t7139_routewithcmaptest_0.1</module>
   </modules>
