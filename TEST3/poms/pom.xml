@@ -8,6 +8,10 @@
   <packaging>pom</packaging>
   <name>TEST3 Codes Master</name>
   <url>http://www.talend.org/</url>
+  <modules>
+    <module>jobs/process/publish/tup_t7139_checkrelease_routewithcmaptest_0.1</module>
+    <module>jobs/routes/tup_t7139_routewithcmaptest_0.1</module>
+  </modules>
   <properties>
     <signer.version>7.3.1-SNAPSHOT</signer.version>
     <talend.project.name>TEST3</talend.project.name>
