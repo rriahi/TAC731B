@@ -1,0 +1,6 @@
+{
+  "reference_projects" : [ {
+    "project" : "TEST3",
+    "branch" : "master"
+  } ]
+}
