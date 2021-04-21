@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema>
+    <column comment="URL to retrieve the next page of the response if it exists; otherwise absent.
+" default="" key="false" label="nextPage" length="-1" nullable="false" originalDbColumnName="nextPage" pattern="" precision="0" talendType="id_String"/>
+    <column comment="Category of the product. Used by Zuora Quotes Guided Product Selector.
+
+Possible values are:
+  - Base Products
+  - Add On Servic..." default="" key="false" label="products_category" length="-1" nullable="false" originalDbColumnName="products_category" pattern="" precision="0" talendType="id_String"/>
+    <column comment="Optional product description.
+" default="" key="false" label="products_description" length="-1" nullable="false" originalDbColumnName="products_description" pattern="" precision="0" talendType="id_String"/>
+    <column comment="The date when the product expires and cannot be subscribed to anymore, as `yyyy-mm-dd`.
+" default="" key="false" label="products_effectiveEndDate" length="-1" nullable="false" originalDbColumnName="products_effectiveEndDate" pattern="" precision="0" talendType="id_Date"/>
+    <column comment="The date when the product becomes available and can be subscribed to, as `yyyy-mm-dd`.
+" default="" key="false" label="products_effectiveStartDate" length="-1" nullable="false" originalDbColumnName="products_effectiveStartDate" pattern="" precision="0" talendType="id_Date"/>
+    <column comment="Product ID.
+" default="" key="false" label="products_id" length="-1" nullable="false" originalDbColumnName="products_id" pattern="" precision="0" talendType="id_String"/>
+    <column comment="Product name, up to 100 characters.
+" default="" key="false" label="products_name" length="-1" nullable="false" originalDbColumnName="products_name" pattern="" precision="0" talendType="id_String"/>
+    <column comment="Feature code, up to 255 characters long.
+" default="" key="false" label="products_productFeatures_code_1" length="-1" nullable="false" originalDbColumnName="products_productFeatures_code_1" pattern="" precision="0" talendType="id_String"/>
+    <column comment="Feature description.
+" default="" key="false" label="products_productFeatures_description_1" length="-1" nullable="false" originalDbColumnName="products_productFeatures_description_1" pattern="" precision="0" talendType="id_String"/>
+    <column comment="Feature ID.
+" default="" key="false" label="products_productFeatures_id_1" length="-1" nullable="false" originalDbColumnName="products_productFeatures_id_1" pattern="" precision="0" talendType="id_String"/>
+    <column comment="Feature name, up to 255 characters long.
+" default="" key="false" label="products_productFeatures_name_1" length="-1" nullable="false" originalDbColumnName="products_productFeatures_name_1" pattern="" precision="0" talendType="id_String"/>
+    <column comment="" default="" key="false" label="products_productFeatures_status_1" length="-1" nullable="false" originalDbColumnName="products_productFeatures_status_1" pattern="" precision="0" talendType="id_String"/>
+    <column comment="" default="" key="false" label="products_productFeatures_ProductFeatureObjectCustomFields_1_key_1" length="-1" nullable="false" originalDbColumnName="products_productFeatures_ProductFeatureObjectCustomFields_1_key_1" pattern="" precision="0" talendType="id_String"/>
+    <column comment="" default="" key="false" label="products_productFeatures_ProductFeatureObjectCustomFields_1_Any_1" length="-1" nullable="false" originalDbColumnName="products_productFeatures_ProductFeatureObjectCustomFields_1_Any_1" pattern="" precision="0" talendType="id_String"/>
+    <column comment="" default="" key="false" label="products_productFeatures_ProductFeatureObjectCustomFields_1_key_2" length="-1" nullable="false" originalDbColumnName="products_productFeatures_ProductFeatureObjectCustomFields_1_key_2" pattern="" precision="0" talendType="id_String"/>
+    <column comment="" default="" key="false" label="products_productFeatures_ProductFeatureObjectCustomFields_1_Any_2" length="-1" nullable="false" originalDbColumnName="products_productFeatures_ProductFeatureObjectCustomFields_1_Any_2" pattern="" precision="0" talendType="id_String"/>
+    <column comment="" default="" key="false" label="products_productFeatures_ProductFeatureObjectCustomFields_1_key_3" length="-1" nullable="false" originalDbColumnName="products_productFeatures_ProductFeatureObjectCustomFields_1_key_3" pattern="" precision="0" talendType="id_String"/>
+    <column comment="" default="" key="false" label="products_productFeatures_ProductFeatureObjectCustomFields_1_Any_3" length="-1" nullable="false" originalDbColumnName="products_productFeatures_ProductFeatureObjectCustomFields_1_Any_3" pattern="" precision="0" talendType="id_String"/>
+    <column comment="" default="" key="false" label="products_productFeatures_ProductFeatureObjectCustomFields_1_key_4" length="-1" nullable="false" originalDbColumnName="products_productFeatures_ProductFeatureObjectCustomFields_1_key_4" pattern="" precision="0" talendType="id_String"/>
+    <column comment="" default="" key="false" label="products_productFeatures_ProductFeatureObjectCustomFields_1_Any_4" length="-1" nullable="false" originalDbColumnName="products_productFeatures_ProductFeatureObjectCustomFields_1_Any_4" pattern="" precision="0" talendType="id_String"/>
+    <column comment="" default="" key="false" label="products_productFeatures_ProductFeatureObjectCustomFields_1_key_5" length="-1" nullable="false" originalDbColumnName="products_productFeatures_ProductFeatureObjectCustomFields_1_key_5" pattern="" precision="0" talendType="id_String"/>
+    <column comment="" default="" key="false" label="products_productFeatures_ProductFeatureObjectCustomFields_1_Any_5" length="-1" nullable="false" originalDbColumnName="products_productFeatures_ProductFeatureObjectCustomFields_1_Any_5" pattern="" precision="0" talendType="id_String"/>
+    <column comment="Feature code, up to 255 characters long.
+" default="" key="false" label="products_productFeatures_code_2" length="-1" nullable="false" originalDbColumnName="products_productFeatures_code_2" pattern="" precision="0" talendType="id_String"/>
+    <column comment="Feature description.
+" default="" key="false" label="products_productFeatures_description_2" length="-1" nullable="false" originalDbColumnName="products_productFeatures_description_2" pattern="" precision="0" talendType="id_String"/>
+    <column comment="Feature ID.
+" default="" key="false" label="products_productFeatures_id_2" length="-1" nullable="false" originalDbColumnName="products_productFeatures_id_2" pattern="" precision="0" talendType="id_String"/>
+    <column comment="Feature name, up to 255 characters long.
+" default="" key="false" label="products_productFeatures_name_2" length="-1" nullable="false" originalDbColumnName="products_productFeatures_name_2" pattern="" precision="0" talendType="id_String"/>
+    <column comment="" default="" key="false" label="products_productFeatures_status_2" length="-1" nullable="false" originalDbColumnName="products_productFeatures_status_2" pattern="" precision="0" talendType="id_String"/>
+    <column comment="" default="" key="false" label="products_productFeatures_ProductFeatureObjectCustomFields_2_key_1" length="-1" nullable="false" originalDbColumnName="products_productFeatures_ProductFeatureObjectCustomFields_2_key_1" pattern="" precision="0" talendType="id_String"/>
+    <column comment="" default="" key="false" label="products_productFeatures_ProductFeatureObjectCustomFields_2_Any_1" length="-1" nullable="false" originalDbColumnName="products_productFeatures_ProductFeatureObjectCustomFields_2_Any_1" pattern="" precision="0" talendType="id_String"/>
+    <column comment="" default="" key="false" label="products_productFeatures_ProductFeatureObjectCustomFields_2_key_2" length="-1" nullable="false" originalDbColumnName="products_productFeatures_ProductFeatureObjectCustomFields_2_key_2" pattern="" precision="0" talendType="id_String"/>
+    <column comment="" default="" key="false" label="products_productFeatures_ProductFeatureObjectCustomFields_2_Any_2" length="-1" nullable="false" originalDbColumnName="products_productFeatures_ProductFeatureObjectCustomFields_2_Any_2" pattern="" precision="0" talendType="id_String"/>
+    <column comment="" default="" key="false" label="products_productFeatures_ProductFeatureObjectCustomFields_2_key_3" length="-1" nullable="false" originalDbColumnName="products_productFeatures_ProductFeatureObjectCustomFields_2_key_3" pattern="" precision="0" talendType="id_String"/>
+    <column comment="" default="" key="false" label="products_productFeatures_ProductFeatureObjectCustomFields_2_Any_3" length="-1" nullable="false" originalDbColumnName="products_productFeatures_ProductFeatureObjectCustomFields_2_Any_3" pattern="" precision="0" talendType="id_String"/>
+    <column comment="" default="" key="false" label="products_productFeatures_ProductFeatureObjectCustomFields_2_key_4" length="-1" nullable="false" originalDbColumnName="products_productFeatures_ProductFeatureObjectCustomFields_2_key_4" pattern="" precision="0" talendType="id_String"/>
+    <column comment="" default="" key="false" label="products_productFeatures_ProductFeatureObjectCustomFields_2_Any_4" length="-1" nullable="false" originalDbColumnName="products_productFeatures_ProductFeatureObjectCustomFields_2_Any_4" pattern="" precision="0" talendType="id_String"/>
+    <column comment="" default="" key="false" label="products_productFeatures_ProductFeatureObjectCustomFields_2_key_5" length="-1" nullable="false" originalDbColumnName="products_productFeatures_ProductFeatureObjectCustomFields_2_key_5" pattern="" precision="0" talendType="id_String"/>
+    <column comment="" default="" key="false" label="products_productFeatures_ProductFeatureObjectCustomFields_2_Any_5" length="-1" nullable="false" originalDbColumnName="products_productFeatures_ProductFeatureObjectCustomFields_2_Any_5" pattern="" precision="0" talendType="id_String"/>
+    <column comment="Feature code, up to 255 characters long.
+" default="" key="false" label="products_productFeatures_code_3" length="-1" nullable="false" originalDbColumnName="products_productFeatures_code_3" pattern="" precision="0" talendType="id_String"/>
+    <column comment="Feature description.
+" default="" key="false" label="products_productFeatures_description_3" length="-1" nullable="false" originalDbColumnName="products_productFeatures_description_3" pattern="" precision="0" talendType="id_String"/>
+    <column comment="Feature ID.
+" default="" key="false" label="products_productFeatures_id_3" length="-1" nullable="false" originalDbColumnName="products_productFeatures_id_3" pattern="" precision="0" talendType="id_String"/>
+    <column comment="Feature name, up to 255 characters long.
+" default="" key="false" label="products_productFeatures_name_3" length="-1" nullable="false" originalDbColumnName="products_productFeatures_name_3" pattern="" precision="0" talendType="id_String"/>
+    <column comment="" default="" key="false" label="products_productFeatures_status_3" length="-1" nullable="false" originalDbColumnName="products_productFeatures_status_3" pattern="" precision="0" talendType="id_String"/>
+    <column comment="" default="" key="false" label="products_productFeatures_ProductFeatureObjectCustomFields_3_key_1" length="-1" nullable="false" originalDbColumnName="products_productFeatures_ProductFeatureObjectCustomFields_3_key_1" pattern="" precision="0" talendType="id_String"/>
+    <column comment="" default="" key="false" label="products_productFeatures_ProductFeatureObjectCustomFields_3_Any_1" length="-1" nullable="false" originalDbColumnName="products_productFeatures_ProductFeatureObjectCustomFields_3_Any_1" pattern="" precision="0" talendType="id_String"/>
+    <column comment="" default="" key="false" label="products_productFeatures_ProductFeatureObjectCustomFields_3_key_2" length="-1" nullable="false" originalDbColumnName="products_productFeatures_ProductFeatureObjectCustomFields_3_key_2" pattern="" precision="0" talendType="id_String"/>
+    <column comment="" default="" key="false" label="products_productFeatures_ProductFeatureObjectCustomFields_3_Any_2" length="-1" nullable="false" originalDbColumnName="products_productFeatures_ProductFeatureObjectCustomFields_3_Any_2" pattern="" precision="0" talendType="id_String"/>
+    <column comment="" default="" key="false" label="products_productFeatures_ProductFeatureObjectCustomFields_3_key_3" length="-1" nullable="false" originalDbColumnName="products_productFeatures_ProductFeatureObjectCustomFields_3_key_3" pattern="" precision="0" talendType="id_String"/>
+    <column comment="" default="" key="false" label="products_productFeatures_ProductFeatureObjectCustomFields_3_Any_3" length="-1" nullable="false" originalDbColumnName="products_productFeatures_ProductFeatureObjectCustomFields_3_Any_3" pattern="" precision="0" talendType="id_String"/>
+    <column comment="" default="" key="false" label="products_productFeatures_ProductFeatureObjectCustomFields_3_key_4" length="-1" nullable="false" originalDbColumnName="products_productFeatures_ProductFeatureObjectCustomFields_3_key_4" pattern="" precision="0" talendType="id_String"/>
+    <column comment="" default="" key="false" label="products_productFeatures_ProductFeatureObjectCustomFields_3_Any_4" length="-1" nullable="false" originalDbColumnName="products_productFeatures_ProductFeatureObjectCustomFields_3_Any_4" pattern="" precision="0" talendType="id_String"/>
+    <column comment="" default="" key="false" label="products_productFeatures_ProductFeatureObjectCustomFields_3_key_5" length="-1" nullable="false" originalDbColumnName="products_productFeatures_ProductFeatureObjectCustomFields_3_key_5" pattern="" precision="0" talendType="id_String"/>
+    <column comment="" default="" key="false" label="products_productFeatures_ProductFeatureObjectCustomFields_3_Any_5" length="-1" nullable="false" originalDbColumnName="products_productFeatures_ProductFeatureObjectCustomFields_3_Any_5" pattern="" precision="0" talendType="id_String"/>
+    <column comment="Feature code, up to 255 characters long.
+" default="" key="false" label="products_productFeatures_code_4" length="-1" nullable="false" originalDbColumnName="products_productFeatures_code_4" pattern="" precision="0" talendType="id_String"/>
+    <column comment="Feature description.
+" default="" key="false" label="products_productFeatures_description_4" length="-1" nullable="false" originalDbColumnName="products_productFeatures_description_4" pattern="" precision="0" talendType="id_String"/>
+    <column comment="Feature ID.
+" default="" key="false" label="products_productFeatures_id_4" length="-1" nullable="false" originalDbColumnName="products_productFeatures_id_4" pattern="" precision="0" talendType="id_String"/>
+    <column comment="Feature name, up to 255 characters long.
+" default="" key="false" label="products_productFeatures_name_4" length="-1" nullable="false" originalDbColumnName="products_productFeatures_name_4" pattern="" precision="0" talendType="id_String"/>
+    <column comment="" default="" key="false" label="products_productFeatures_status_4" length="-1" nullable="false" originalDbColumnName="products_productFeatures_status_4" pattern="" precision="0" talendType="id_String"/>
+    <column comment="" default="" key="false" label="products_productFeatures_ProductFeatureObjectCustomFields_4_key_1" length="-1" nullable="false" originalDbColumnName="products_productFeatures_ProductFeatureObjectCustomFields_4_key_1" pattern="" precision="0" talendType="id_String"/>
+    <column comment="" default="" key="false" label="products_productFeatures_ProductFeatureObjectCustomFields_4_Any_1" length="-1" nullable="false" originalDbColumnName="products_productFeatures_ProductFeatureObjectCustomFields_4_Any_1" pattern="" precision="0" talendType="id_String"/>
+    <column comment="" default="" key="false" label="products_productFeatures_ProductFeatureObjectCustomFields_4_key_2" length="-1" nullable="false" originalDbColumnName="products_productFeatures_ProductFeatureObjectCustomFields_4_key_2" pattern="" precision="0" talendType="id_String"/>
+    <column comment="" default="" key="false" label="products_productFeatures_ProductFeatureObjectCustomFields_4_Any_2" length="-1" nullable="false" originalDbColumnName="products_productFeatures_ProductFeatureObjectCustomFields_4_Any_2" pattern="" precision="0" talendType="id_String"/>
+    <column comment="" default="" key="false" label="products_productFeatures_ProductFeatureObjectCustomFields_4_key_3" length="-1" nullable="false" originalDbColumnName="products_productFeatures_ProductFeatureObjectCustomFields_4_key_3" pattern="" precision="0" talendType="id_String"/>
+    <column comment="" default="" key="false" label="products_productFeatures_ProductFeatureObjectCustomFields_4_Any_3" length="-1" nullable="false" originalDbColumnName="products_productFeatures_ProductFeatureObjectCustomFields_4_Any_3" pattern="" precision="0" talendType="id_String"/>
+    <column comment="" default="" key="false" label="products_productFeatures_ProductFeatureObjectCustomFields_4_key_4" length="-1" nullable="false" originalDbColumnName="products_productFeatures_ProductFeatureObjectCustomFields_4_key_4" pattern="" precision="0" talendType="id_String"/>
+    <column comment="" default="" key="false" label="products_productFeatures_ProductFeatureObjectCustomFields_4_Any_4" length="-1" nullable="false" originalDbColumnName="products_productFeatures_ProductFeatureObjectCustomFields_4_Any_4" pattern="" precision="0" talendType="id_String"/>
+    <column comment="" default="" key="false" label="products_productFeatures_ProductFeatureObjectCustomFields_4_key_5" length="-1" nullable="false" originalDbColumnName="products_productFeatures_ProductFeatureObjectCustomFields_4_key_5" pattern="" precision="0" talendType="id_String"/>
+    <column comment="" default="" key="false" label="products_productFeatures_ProductFeatureObjectCustomFields_4_Any_5" length="-1" nullable="false" originalDbColumnName="products_productFeatures_ProductFeatureObjectCustomFields_4_Any_5" pattern="" precision="0" talendType="id_String"/>
+    <column comment="Feature code, up to 255 characters long.
+" default="" key="false" label="products_productFeatures_code_5" length="-1" nullable="false" originalDbColumnName="products_productFeatures_code_5" pattern="" precision="0" talendType="id_String"/>
+    <column comment="Feature description.
+" default="" key="false" label="products_productFeatures_description_5" length="-1" nullable="false" originalDbColumnName="products_productFeatures_description_5" pattern="" precision="0" talendType="id_String"/>
+    <column comment="Feature ID.
+" default="" key="false" label="products_productFeatures_id_5" length="-1" nullable="false" originalDbColumnName="products_productFeatures_id_5" pattern="" precision="0" talendType="id_String"/>
+    <column comment="Feature name, up to 255 characters long.
+" default="" key="false" label="products_productFeatures_name_5" length="-1" nullable="false" originalDbColumnName="products_productFeatures_name_5" pattern="" precision="0" talendType="id_String"/>
+    <column comment="" default="" key="false" label="products_productFeatures_status_5" length="-1" nullable="false" originalDbColumnName="products_productFeatures_status_5" pattern="" precision="0" talendType="id_String"/>
+    <column comment="" default="" key="false" label="products_productFeatures_ProductFeatureObjectCustomFields_5_key_1" length="-1" nullable="false" originalDbColumnName="products_productFeatures_ProductFeatureObjectCustomFields_5_key_1" pattern="" precision="0" talendType="id_String"/>
+    <column comment="" default="" key="false" label="products_productFeatures_ProductFeatureObjectCustomFields_5_Any_1" length="-1" nullable="false" originalDbColumnName="products_productFeatures_ProductFeatureObjectCustomFields_5_Any_1" pattern="" precision="0" talendType="id_String"/>
+    <column comment="" default="" key="false" label="products_productFeatures_ProductFeatureObjectCustomFields_5_key_2" length="-1" nullable="false" originalDbColumnName="products_productFeatures_ProductFeatureObjectCustomFields_5_key_2" pattern="" precision="0" talendType="id_String"/>
+    <column comment="" default="" key="false" label="products_productFeatures_ProductFeatureObjectCustomFields_5_Any_2" length="-1" nullable="false" originalDbColumnName="products_productFeatures_ProductFeatureObjectCustomFields_5_Any_2" pattern="" precision="0" talendType="id_String"/>
+    <column comment="" default="" key="false" label="products_productFeatures_ProductFeatureObjectCustomFields_5_key_3" length="-1" nullable="false" originalDbColumnName="products_productFeatures_ProductFeatureObjectCustomFields_5_key_3" pattern="" precision="0" talendType="id_String"/>
+    <column comment="" default="" key="false" label="products_productFeatures_ProductFeatureObjectCustomFields_5_Any_3" length="-1" nullable="false" originalDbColumnName="products_productFeatures_ProductFeatureObjectCustomFields_5_Any_3" pattern="" precision="0" talendType="id_String"/>
+    <column comment="" default="" key="false" label="products_productFeatures_ProductFeatureObjectCustomFields_5_key_4" length="-1" nullable="false" originalDbColumnName="products_productFeatures_ProductFeatureObjectCustomFields_5_key_4" pattern="" precision="0" talendType="id_String"/>
+    <column comment="" default="" key="false" label="products_productFeatures_ProductFeatureObjectCustomFields_5_Any_4" length="-1" nullable="false" originalDbColumnName="products_productFeatures_ProductFeatureObjectCustomFields_5_Any_4" pattern="" precision="0" talendType="id_String"/>
+    <column comment="" default="" key="false" label="products_productFeatures_ProductFeatureObjectCustomFields_5_key_5" length="-1" nullable="false" originalDbColumnName="products_productFeatures_ProductFeatureObjectCustomFields_5_key_5" pattern="" precision="0" talendType="id_String"/>
+    <column comment="" default="" key="false" label="products_productFeatures_ProductFeatureObjectCustomFields_5_Any_5" length="-1" nullable="false" originalDbColumnName="products_productFeatures_ProductFeatureObjectCustomFields_5_Any_5" pattern="" precision="0" talendType="id_String"/>
+    <column comment="URL to retrieve information about all product rate plans of a specific product. For example, `https://rest.zuora.com/v1/rateplan..." default="" key="false" label="products_productRatePlans" length="-1" nullable="false" originalDbColumnName="products_productRatePlans" pattern="" precision="0" talendType="id_String"/>
+    <column comment="Unique product SKU, up to 50 characters.
+" default="" key="false" label="products_sku" length="-1" nullable="false" originalDbColumnName="products_sku" pattern="" precision="0" talendType="id_String"/>
+    <column comment="" default="" key="false" label="products_tags" length="-1" nullable="false" originalDbColumnName="products_tags" pattern="" precision="0" talendType="id_String"/>
+    <column comment="ID of the corresponding object in NetSuite. Only available if you have installed the [Zuora Connector for NetSuite](https://www...." default="" key="false" label="products_IntegrationId__NS" length="-1" nullable="false" originalDbColumnName="products_IntegrationId__NS" pattern="" precision="0" talendType="id_String"/>
+    <column comment="Status of the product&apos;s synchronization with NetSuite. Only available if you have installed the [Zuora Connector for NetSuite](h..." default="" key="false" label="products_IntegrationStatus__NS" length="-1" nullable="false" originalDbColumnName="products_IntegrationStatus__NS" pattern="" precision="0" talendType="id_String"/>
+    <column comment="" default="" key="false" label="products_ItemType__NS" length="-1" nullable="false" originalDbColumnName="products_ItemType__NS" pattern="" precision="0" talendType="id_String"/>
+    <column comment="Date when the product was synchronized with NetSuite. Only available if you have installed the [Zuora Connector for NetSuite](ht..." default="" key="false" label="products_SyncDate__NS" length="-1" nullable="false" originalDbColumnName="products_SyncDate__NS" pattern="" precision="0" talendType="id_String"/>
+    <column comment="" default="" key="false" label="products_ProductObjectCustomFields_key_1" length="-1" nullable="false" originalDbColumnName="products_ProductObjectCustomFields_key_1" pattern="" precision="0" talendType="id_String"/>
+    <column comment="" default="" key="false" label="products_ProductObjectCustomFields_Any_1" length="-1" nullable="false" originalDbColumnName="products_ProductObjectCustomFields_Any_1" pattern="" precision="0" talendType="id_String"/>
+    <column comment="" default="" key="false" label="products_ProductObjectCustomFields_key_2" length="-1" nullable="false" originalDbColumnName="products_ProductObjectCustomFields_key_2" pattern="" precision="0" talendType="id_String"/>
+    <column comment="" default="" key="false" label="products_ProductObjectCustomFields_Any_2" length="-1" nullable="false" originalDbColumnName="products_ProductObjectCustomFields_Any_2" pattern="" precision="0" talendType="id_String"/>
+    <column comment="" default="" key="false" label="products_ProductObjectCustomFields_key_3" length="-1" nullable="false" originalDbColumnName="products_ProductObjectCustomFields_key_3" pattern="" precision="0" talendType="id_String"/>
+    <column comment="" default="" key="false" label="products_ProductObjectCustomFields_Any_3" length="-1" nullable="false" originalDbColumnName="products_ProductObjectCustomFields_Any_3" pattern="" precision="0" talendType="id_String"/>
+    <column comment="" default="" key="false" label="products_ProductObjectCustomFields_key_4" length="-1" nullable="false" originalDbColumnName="products_ProductObjectCustomFields_key_4" pattern="" precision="0" talendType="id_String"/>
+    <column comment="" default="" key="false" label="products_ProductObjectCustomFields_Any_4" length="-1" nullable="false" originalDbColumnName="products_ProductObjectCustomFields_Any_4" pattern="" precision="0" talendType="id_String"/>
+    <column comment="" default="" key="false" label="products_ProductObjectCustomFields_key_5" length="-1" nullable="false" originalDbColumnName="products_ProductObjectCustomFields_key_5" pattern="" precision="0" talendType="id_String"/>
+    <column comment="" default="" key="false" label="products_ProductObjectCustomFields_Any_5" length="-1" nullable="false" originalDbColumnName="products_ProductObjectCustomFields_Any_5" pattern="" precision="0" talendType="id_String"/>
+    <column comment="Returns `true` if the request was processed successfully.
+" default="" key="false" label="success" length="-1" nullable="false" originalDbColumnName="success" pattern="" precision="0" talendType="id_Boolean"/>
+</schema>
+
