@@ -1,3 +1,6 @@
 {
-  "reference_projects" : [ ]
+  "reference_projects" : [ {
+    "project" : "D",
+    "branch" : "master"
+  } ]
 }
