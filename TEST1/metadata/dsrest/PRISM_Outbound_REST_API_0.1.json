@@ -1,0 +1,4101 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "v1",
+    "title" : "Outbound Interfaces Rest API"
+  },
+  "host" : "localhost:55625",
+  "schemes" : [ "http" ],
+  "paths" : {
+    "/api/v1/Outbound/Award_Obligate_Out" : {
+      "post" : {
+        "tags" : [ "Outbound" ],
+        "operationId" : "Outbound_Award_Obligate_Out",
+        "consumes" : [ "application/json", "text/json", "application/xml", "text/xml", "application/x-www-form-urlencoded" ],
+        "produces" : [ "application/json", "text/json", "application/xml", "text/xml" ],
+        "parameters" : [ {
+          "name" : "datajson",
+          "in" : "body",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/OutboundInterface.AwardModels.OutboundAwardClass"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "schema" : {
+              "$ref" : "#/definitions/OutboundInterfaces.Models.OutboundCallResponse"
+            }
+          }
+        }
+      },
+      "parameters" : [ ]
+    },
+    "/api/v1/Outbound/REQ_Commitment_out" : {
+      "post" : {
+        "tags" : [ "Outbound" ],
+        "operationId" : "Outbound_REQ_Commitment_out",
+        "consumes" : [ "application/json", "text/json", "application/xml", "text/xml", "application/x-www-form-urlencoded" ],
+        "produces" : [ "application/json", "text/json", "application/xml", "text/xml" ],
+        "parameters" : [ {
+          "name" : "datajson",
+          "in" : "body",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/OutboundInterfaces.Models.OutboundReqClass"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "schema" : {
+              "$ref" : "#/definitions/OutboundInterfaces.Models.OutboundCallResponse"
+            }
+          }
+        }
+      },
+      "parameters" : [ ]
+    },
+    "/api/v1/Outbound/REQ_Validation_out" : {
+      "post" : {
+        "tags" : [ "Outbound" ],
+        "operationId" : "Outbound_REQ_Validation_out",
+        "consumes" : [ "application/json", "text/json", "application/xml", "text/xml", "application/x-www-form-urlencoded" ],
+        "produces" : [ "application/json", "text/json", "application/xml", "text/xml" ],
+        "parameters" : [ {
+          "name" : "datajson",
+          "in" : "body",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/OutboundInterfaces.Models.OutboundReqClass"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "schema" : {
+              "$ref" : "#/definitions/OutboundInterfaces.Models.OutboundCallResponse"
+            }
+          }
+        }
+      },
+      "parameters" : [ ]
+    },
+    "/api/v1/Outbound/Award_Validation_out" : {
+      "post" : {
+        "tags" : [ "Outbound" ],
+        "operationId" : "Outbound_Award_Validation_out",
+        "consumes" : [ "application/json", "text/json", "application/xml", "text/xml", "application/x-www-form-urlencoded" ],
+        "produces" : [ "application/json", "text/json", "application/xml", "text/xml" ],
+        "parameters" : [ {
+          "name" : "datajson",
+          "in" : "body",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/OutboundInterface.AwardModels.OutboundAwardClass"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "schema" : {
+              "$ref" : "#/definitions/OutboundInterfaces.Models.OutboundCallResponse"
+            }
+          }
+        }
+      },
+      "parameters" : [ ]
+    }
+  },
+  "definitions" : {
+    "OutboundInterface.AwardModels.OutboundAwardClass" : {
+      "type" : "object",
+      "properties" : {
+        "TRANSACTION" : {
+          "$ref" : "#/definitions/OutboundInterface.AwardModels.TRANSACTION"
+        },
+        "AWARD" : {
+          "$ref" : "#/definitions/OutboundInterface.AwardModels.AWARD"
+        }
+      }
+    },
+    "OutboundInterface.AwardModels.TRANSACTION" : {
+      "type" : "object",
+      "properties" : {
+        "TRANSACTIONID" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "SOURCESYSTEMID" : {
+          "type" : "string"
+        },
+        "TRANSACTIONDATE" : {
+          "type" : "string",
+          "format" : "date-time"
+        },
+        "SYSTEMACCESS" : {
+          "$ref" : "#/definitions/OutboundInterface.AwardModels.SYSTEMACCESS"
+        }
+      }
+    },
+    "OutboundInterface.AwardModels.AWARD" : {
+      "type" : "object",
+      "properties" : {
+        "CRITICALITY_DESIGNATOR" : {
+          "type" : "string"
+        },
+        "ORIGIN" : {
+          "type" : "string"
+        },
+        "EXTFINANCEDOC" : {
+          "type" : "string"
+        },
+        "EXTFINAPPROVEDDATE" : {
+          "type" : "string",
+          "format" : "date-time"
+        },
+        "PAYMENT_TERMS_NAME" : {
+          "type" : "string"
+        },
+        "PRIORALLZEROFLAG" : {
+          "type" : "string"
+        },
+        "FINCHANGETYPE" : {
+          "type" : "string"
+        },
+        "ACTIONREQUESTTYPE" : {
+          "type" : "string"
+        },
+        "CREATEDBY" : {
+          "type" : "string"
+        },
+        "CREATEDATE" : {
+          "type" : "string",
+          "format" : "date-time"
+        },
+        "LASTUPDATEDBY" : {
+          "type" : "string",
+          "format" : "date-time"
+        },
+        "LASTUPDATEDATE" : {
+          "type" : "string",
+          "format" : "date-time"
+        },
+        "PRISMAWARDTYPE" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "GRANT_AGREEMENTTYPE" : {
+          "type" : "string"
+        },
+        "PARENTAWARD" : {
+          "type" : "string"
+        },
+        "EXTERNALPARENT" : {
+          "type" : "string"
+        },
+        "AWARDNUM" : {
+          "type" : "string"
+        },
+        "ORDERNUM" : {
+          "type" : "string"
+        },
+        "MODNUM" : {
+          "type" : "string"
+        },
+        "DESCR" : {
+          "type" : "string"
+        },
+        "HEADERTEXT" : {
+          "type" : "string"
+        },
+        "FOOTERTEXT" : {
+          "type" : "string"
+        },
+        "CHANGETEXT" : {
+          "type" : "string"
+        },
+        "INTERNALNOTETEXT" : {
+          "type" : "string"
+        },
+        "NOTETOBUYERTEXT" : {
+          "type" : "string"
+        },
+        "CONFIRMEDWITH" : {
+          "type" : "string"
+        },
+        "REFYOURTEXT" : {
+          "type" : "string"
+        },
+        "ITEMS" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "AMOUNT" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "TOTALOBLIGATEDAMT" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "DOMINAMT" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "DOMAXAMT" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "AWARDDATE" : {
+          "type" : "string",
+          "format" : "date-time"
+        },
+        "EFFECTIVEDATE" : {
+          "type" : "string",
+          "format" : "date-time"
+        },
+        "POP_STARTDATE" : {
+          "type" : "string",
+          "format" : "date-time"
+        },
+        "POP_ENDDATE" : {
+          "type" : "string",
+          "format" : "date-time"
+        },
+        "VENDORID" : {
+          "type" : "string"
+        },
+        "VENDORSIGNEDDATE" : {
+          "type" : "string",
+          "format" : "date-time"
+        },
+        "PREFERENCEAWARD" : {
+          "type" : "string"
+        },
+        "SETASIDEPERCENT" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "SBACONTRACTNUM" : {
+          "type" : "string"
+        },
+        "UNPRICEDYN" : {
+          "type" : "string"
+        },
+        "SUBSISTENCE" : {
+          "type" : "string"
+        },
+        "PRIMARYPRODCODE" : {
+          "type" : "string"
+        },
+        "PRIMARYNAICSCODE" : {
+          "type" : "string"
+        },
+        "PROJECTID" : {
+          "type" : "string"
+        },
+        "PROJECTTITLE" : {
+          "type" : "string"
+        },
+        "WARRANTTYPE" : {
+          "type" : "string"
+        },
+        "NGPIID" : {
+          "type" : "string"
+        },
+        "NGPIIDAGENCYID" : {
+          "type" : "string"
+        },
+        "NGREFPIID" : {
+          "type" : "string"
+        },
+        "REFPIIDAGENCYID" : {
+          "type" : "string"
+        },
+        "NGSAC" : {
+          "type" : "string"
+        },
+        "FAA_PRE_UPIID" : {
+          "type" : "string"
+        },
+        "MOD_REASON_CODE" : {
+          "type" : "string"
+        },
+        "MOD_REASON_DESCR" : {
+          "type" : "string"
+        },
+        "NGAPPROVALNUM" : {
+          "type" : "string"
+        },
+        "BASECURRENCYCODE" : {
+          "type" : "string"
+        },
+        "PRINTCURRENCYCODE" : {
+          "type" : "string"
+        },
+        "SECURITYCLASSIFICATIONCODE" : {
+          "type" : "string"
+        },
+        "INCLUDESRECOVERYACTFUNDS" : {
+          "type" : "string"
+        },
+        "PREDOMINANTTASSEG1" : {
+          "type" : "string"
+        },
+        "PREDOMINANTTASSEG2" : {
+          "type" : "string"
+        },
+        "PREDOMINANTTASSEG3" : {
+          "type" : "string"
+        },
+        "PREDOMINANTTAS" : {
+          "type" : "string"
+        },
+        "NONRECOVERYTASSEG1" : {
+          "type" : "string"
+        },
+        "NONRECOVERYTASSEG2" : {
+          "type" : "string"
+        },
+        "NONRECOVERYTASSEG3" : {
+          "type" : "string"
+        },
+        "NONRECOVERYTAS" : {
+          "type" : "string"
+        },
+        "RECOVERYTASSEG1" : {
+          "type" : "string"
+        },
+        "RECOVERYTASSEG2" : {
+          "type" : "string"
+        },
+        "RECOVERYTASSEG3" : {
+          "type" : "string"
+        },
+        "RECOVERYTAS" : {
+          "type" : "string"
+        },
+        "THISVERSIONFUNDEDAMT" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "TOTALRELEASEDFUNDEDAMT" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "THISVERSIONFUNDEDAMTAPPROP" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "TOTALRELEASEDFUNDEDAMTAPPROP" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "THISVERSIONFUNDEDAMTNONAPPROP" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "TOTALRELFUNDEDAMTNONAPPROP" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "THISVERSIONRECOVERYACTFUNDS" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "TOTALRELEASEDRECOVERYACTFUNDS" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "GENERIC1" : {
+          "type" : "string"
+        },
+        "GENERIC2" : {
+          "type" : "string"
+        },
+        "GENERIC3" : {
+          "type" : "string"
+        },
+        "GENERIC4" : {
+          "type" : "string"
+        },
+        "GENERIC5" : {
+          "type" : "string"
+        },
+        "GENERIC6" : {
+          "type" : "string"
+        },
+        "GENERIC7" : {
+          "type" : "string"
+        },
+        "GENERIC8" : {
+          "type" : "string"
+        },
+        "GENERIC9" : {
+          "type" : "string"
+        },
+        "GENERIC10" : {
+          "type" : "string"
+        },
+        "GENERIC11" : {
+          "type" : "string"
+        },
+        "GENERIC12" : {
+          "type" : "string"
+        },
+        "GENERIC13" : {
+          "type" : "string"
+        },
+        "GENERIC14" : {
+          "type" : "string"
+        },
+        "GENERIC15" : {
+          "type" : "string"
+        },
+        "GENERIC16" : {
+          "type" : "string"
+        },
+        "GENERIC17" : {
+          "type" : "string"
+        },
+        "GENERIC18" : {
+          "type" : "string"
+        },
+        "GENERIC19" : {
+          "type" : "string"
+        },
+        "GENERIC20" : {
+          "type" : "string"
+        },
+        "GENERIC21" : {
+          "type" : "string"
+        },
+        "GENERIC22" : {
+          "type" : "string"
+        },
+        "GENERIC23" : {
+          "type" : "string"
+        },
+        "GENERIC24" : {
+          "type" : "string"
+        },
+        "GENERIC25" : {
+          "type" : "string"
+        },
+        "GENERIC26" : {
+          "type" : "string"
+        },
+        "GENERIC27" : {
+          "type" : "string"
+        },
+        "GENERIC28" : {
+          "type" : "string"
+        },
+        "GENERIC29" : {
+          "type" : "string"
+        },
+        "GENERIC30" : {
+          "type" : "string"
+        },
+        "GENERIC31" : {
+          "type" : "string"
+        },
+        "GENERIC32" : {
+          "type" : "string"
+        },
+        "GENERIC33" : {
+          "type" : "string"
+        },
+        "GENERIC34" : {
+          "type" : "string"
+        },
+        "GENERIC35" : {
+          "type" : "string"
+        },
+        "GENERIC36" : {
+          "type" : "string"
+        },
+        "GENERIC37" : {
+          "type" : "string"
+        },
+        "GENERIC38" : {
+          "type" : "string"
+        },
+        "GENERIC39" : {
+          "type" : "string"
+        },
+        "GENERIC40" : {
+          "type" : "string"
+        },
+        "GENERIC41" : {
+          "type" : "string"
+        },
+        "GENERIC42" : {
+          "type" : "string"
+        },
+        "GENERIC43" : {
+          "type" : "string"
+        },
+        "GENERIC44" : {
+          "type" : "string"
+        },
+        "GENERIC45" : {
+          "type" : "string"
+        },
+        "GENERIC46" : {
+          "type" : "string"
+        },
+        "GENERIC47" : {
+          "type" : "string"
+        },
+        "GENERIC48" : {
+          "type" : "string"
+        },
+        "GENERIC49" : {
+          "type" : "string"
+        },
+        "GENERIC50" : {
+          "type" : "string"
+        },
+        "GENERIC51" : {
+          "type" : "string"
+        },
+        "GENERIC52" : {
+          "type" : "string"
+        },
+        "GENERIC53" : {
+          "type" : "string"
+        },
+        "GENERIC54" : {
+          "type" : "string"
+        },
+        "GENERIC55" : {
+          "type" : "string"
+        },
+        "GENERIC56" : {
+          "type" : "string"
+        },
+        "GENERIC57" : {
+          "type" : "string"
+        },
+        "GENERIC58" : {
+          "type" : "string"
+        },
+        "GENERIC59" : {
+          "type" : "string"
+        },
+        "GENERIC60" : {
+          "type" : "string"
+        },
+        "GENERIC61" : {
+          "type" : "string"
+        },
+        "GENERIC62" : {
+          "type" : "string"
+        },
+        "GENERIC63" : {
+          "type" : "string"
+        },
+        "GENERIC64" : {
+          "type" : "string"
+        },
+        "GENERIC65" : {
+          "type" : "string"
+        },
+        "GENERIC66" : {
+          "type" : "string"
+        },
+        "GENERIC67" : {
+          "type" : "string"
+        },
+        "GENERIC68" : {
+          "type" : "string"
+        },
+        "GENERIC69" : {
+          "type" : "string"
+        },
+        "GENERIC70" : {
+          "type" : "string"
+        },
+        "GENERIC71" : {
+          "type" : "string"
+        },
+        "GENERIC72" : {
+          "type" : "string"
+        },
+        "GENERIC73" : {
+          "type" : "string"
+        },
+        "GENERIC74" : {
+          "type" : "string"
+        },
+        "GENERIC75" : {
+          "type" : "string"
+        },
+        "GENERIC76" : {
+          "type" : "string"
+        },
+        "GENERIC77" : {
+          "type" : "string"
+        },
+        "GENERIC78" : {
+          "type" : "string"
+        },
+        "GENERIC79" : {
+          "type" : "string"
+        },
+        "GENERIC80" : {
+          "type" : "string"
+        },
+        "GENERIC81" : {
+          "type" : "string"
+        },
+        "GENERIC82" : {
+          "type" : "string"
+        },
+        "GENERIC83" : {
+          "type" : "string"
+        },
+        "GENERIC84" : {
+          "type" : "string"
+        },
+        "GENERIC85" : {
+          "type" : "string"
+        },
+        "GENERIC86" : {
+          "type" : "string"
+        },
+        "GENERIC87" : {
+          "type" : "string"
+        },
+        "GENERIC88" : {
+          "type" : "string"
+        },
+        "GENERIC89" : {
+          "type" : "string"
+        },
+        "GENERIC90" : {
+          "type" : "string"
+        },
+        "GENERIC91" : {
+          "type" : "string"
+        },
+        "GENERIC92" : {
+          "type" : "string"
+        },
+        "GENERIC93" : {
+          "type" : "string"
+        },
+        "GENERIC94" : {
+          "type" : "string"
+        },
+        "GENERIC95" : {
+          "type" : "string"
+        },
+        "GENERIC96" : {
+          "type" : "string"
+        },
+        "GENERIC97" : {
+          "type" : "string"
+        },
+        "GENERIC98" : {
+          "type" : "string"
+        },
+        "GENERIC99" : {
+          "type" : "string"
+        },
+        "GENERIC100" : {
+          "type" : "string"
+        },
+        "GENERIC101" : {
+          "type" : "string"
+        },
+        "GENERIC102" : {
+          "type" : "string"
+        },
+        "GENERIC103" : {
+          "type" : "string"
+        },
+        "GENERIC104" : {
+          "type" : "string"
+        },
+        "GENERIC105" : {
+          "type" : "string"
+        },
+        "GENERIC106" : {
+          "type" : "string"
+        },
+        "GENERIC107" : {
+          "type" : "string"
+        },
+        "GENERIC108" : {
+          "type" : "string"
+        },
+        "GENERIC109" : {
+          "type" : "string"
+        },
+        "GENERIC110" : {
+          "type" : "string"
+        },
+        "GENERIC111" : {
+          "type" : "string"
+        },
+        "GENERIC112" : {
+          "type" : "string"
+        },
+        "GENERIC113" : {
+          "type" : "string"
+        },
+        "GENERIC114" : {
+          "type" : "string"
+        },
+        "GENERIC115" : {
+          "type" : "string"
+        },
+        "GENERIC116" : {
+          "type" : "string"
+        },
+        "GENERIC117" : {
+          "type" : "string"
+        },
+        "GENERIC118" : {
+          "type" : "string"
+        },
+        "GENERIC119" : {
+          "type" : "string"
+        },
+        "GENERIC120" : {
+          "type" : "string"
+        },
+        "EXTCUSTOM1" : {
+          "type" : "string"
+        },
+        "EXTCUSTOM2" : {
+          "type" : "string"
+        },
+        "EXTCUSTOM3" : {
+          "type" : "string"
+        },
+        "EXTCUSTOM4" : {
+          "type" : "string"
+        },
+        "EXTCUSTOM5" : {
+          "type" : "string"
+        },
+        "EXTCUSTOMAMT1" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "EXTCUSTOMAMT2" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "EXTCUSTOMAMT3" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "EXTCUSTOMAMT4" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "EXTCUSTOMAMT5" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "STATUS" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "STATUSDATE" : {
+          "type" : "string",
+          "format" : "date-time"
+        },
+        "FULLYAWARDED" : {
+          "type" : "string"
+        },
+        "REQDOCSAPPROVEDATE" : {
+          "type" : "string",
+          "format" : "date-time"
+        },
+        "PENDINGDATE" : {
+          "type" : "string",
+          "format" : "date-time"
+        },
+        "APPROVEDDATE" : {
+          "type" : "string",
+          "format" : "date-time"
+        },
+        "RELEASEDDATE" : {
+          "type" : "string",
+          "format" : "date-time"
+        },
+        "CANCELEDDATE" : {
+          "type" : "string",
+          "format" : "date-time"
+        },
+        "CLOSEDDATE" : {
+          "type" : "string",
+          "format" : "date-time"
+        },
+        "SITEID" : {
+          "type" : "string"
+        },
+        "SITEDESCR" : {
+          "type" : "string"
+        },
+        "OWNER_USERID" : {
+          "type" : "string"
+        },
+        "OWNER_FIRSTNAME" : {
+          "type" : "string"
+        },
+        "OWNER_LASTNAME" : {
+          "type" : "string"
+        },
+        "OWNER_EMAIL" : {
+          "type" : "string"
+        },
+        "BUYER_USERID" : {
+          "type" : "string"
+        },
+        "BUYER_FIRSTNAME" : {
+          "type" : "string"
+        },
+        "BUYER_LASTNAME" : {
+          "type" : "string"
+        },
+        "BUYER_EMAIL" : {
+          "type" : "string"
+        },
+        "CO_USERID" : {
+          "type" : "string"
+        },
+        "CO_FIRSTNAME" : {
+          "type" : "string"
+        },
+        "CO_LASTNAME" : {
+          "type" : "string"
+        },
+        "CO_EMAIL" : {
+          "type" : "string"
+        },
+        "AGREEMENTSOFFICER_USERID" : {
+          "type" : "string"
+        },
+        "AGREEMENTSOFFICER_FIRSTNAME" : {
+          "type" : "string"
+        },
+        "AGREEMENTSOFFICER_LASTNAME" : {
+          "type" : "string"
+        },
+        "AGREEMENTSOFFICER_EMAIL" : {
+          "type" : "string"
+        },
+        "COR_USERID" : {
+          "type" : "string"
+        },
+        "COR_FIRSTNAME" : {
+          "type" : "string"
+        },
+        "COR_LASTNAME" : {
+          "type" : "string"
+        },
+        "COR_EMAIL" : {
+          "type" : "string"
+        },
+        "ACOR_USERID" : {
+          "type" : "string"
+        },
+        "ACOR_FIRSTNAME" : {
+          "type" : "string"
+        },
+        "ACOR_LASTNAME" : {
+          "type" : "string"
+        },
+        "ACOR_EMAIL" : {
+          "type" : "string"
+        },
+        "ACOFFICER_USERID" : {
+          "type" : "string"
+        },
+        "ACOFFICER_FIRSTNAME" : {
+          "type" : "string"
+        },
+        "ACOFFICER_LASTNAME" : {
+          "type" : "string"
+        },
+        "ACOFFICER_EMAIL" : {
+          "type" : "string"
+        },
+        "PM_USERID" : {
+          "type" : "string"
+        },
+        "PM_FIRSTNAME" : {
+          "type" : "string"
+        },
+        "PM_LASTNAME" : {
+          "type" : "string"
+        },
+        "PM_EMAIL" : {
+          "type" : "string"
+        },
+        "TPOC_USERID" : {
+          "type" : "string"
+        },
+        "TPOC_FIRSTNAME" : {
+          "type" : "string"
+        },
+        "TPOC_LASTNAME" : {
+          "type" : "string"
+        },
+        "TPOC_EMAIL" : {
+          "type" : "string"
+        },
+        "ORIGOFFICEADDR_CODE" : {
+          "type" : "string"
+        },
+        "ORIGOFFICEADDR_NAME" : {
+          "type" : "string"
+        },
+        "ORIGOFFICEADDR_ADDRESS1" : {
+          "type" : "string"
+        },
+        "ORIGOFFICEADDR_ADDRESS2" : {
+          "type" : "string"
+        },
+        "ORIGOFFICEADDR_ADDRESS3" : {
+          "type" : "string"
+        },
+        "ORIGOFFICEADDR_ADDRESS4" : {
+          "type" : "string"
+        },
+        "ORIGOFFICEADDR_CITY" : {
+          "type" : "string"
+        },
+        "ORIGOFFICEADDR_STATE" : {
+          "type" : "string"
+        },
+        "ORIGOFFICEADDR_ZIP" : {
+          "type" : "string"
+        },
+        "ORIGOFFICEADDR_COUNTRY" : {
+          "type" : "string"
+        },
+        "ORIGOFFICEADDR_PHONE" : {
+          "type" : "string"
+        },
+        "ORIGOFFICEADDR_FAX" : {
+          "type" : "string"
+        },
+        "ORIGOFFICEADDR_EMAIL" : {
+          "type" : "string"
+        },
+        "ORIGOFFICEADDR_REGIONCODE" : {
+          "type" : "string"
+        },
+        "ORIGOFFICEADDR_PROVINCE" : {
+          "type" : "string"
+        },
+        "ORIGOFFICEADDR_COUNTY" : {
+          "type" : "string"
+        },
+        "ORIGOFFICEADDR_CUSTOM1" : {
+          "type" : "string"
+        },
+        "ORIGOFFICEADDR_CUSTOM2" : {
+          "type" : "string"
+        },
+        "ORIGOFFICEADDR_CUSTOM3" : {
+          "type" : "string"
+        },
+        "ORIGOFFICEADDR_CUSTOM4" : {
+          "type" : "string"
+        },
+        "ORIGOFFICEADDR_CUSTOM5" : {
+          "type" : "string"
+        },
+        "ISSUINGADDR_CODE" : {
+          "type" : "string"
+        },
+        "ISSUINGADDR_NAME" : {
+          "type" : "string"
+        },
+        "ISSUINGADDR_ADDRESS1" : {
+          "type" : "string"
+        },
+        "ISSUINGADDR_ADDRESS2" : {
+          "type" : "string"
+        },
+        "ISSUINGADDR_ADDRESS3" : {
+          "type" : "string"
+        },
+        "ISSUINGADDR_ADDRESS4" : {
+          "type" : "string"
+        },
+        "ISSUINGADDR_CITY" : {
+          "type" : "string"
+        },
+        "ISSUINGADDR_STATE" : {
+          "type" : "string"
+        },
+        "ISSUINGADDR_ZIP" : {
+          "type" : "string"
+        },
+        "ISSUINGADDR_COUNTRY" : {
+          "type" : "string"
+        },
+        "ISSUINGADDR_PHONE" : {
+          "type" : "string"
+        },
+        "ISSUINGADDR_FAX" : {
+          "type" : "string"
+        },
+        "ISSUINGADDR_EMAIL" : {
+          "type" : "string"
+        },
+        "ISSUINGOFFICEADDR_REGIONCODE" : {
+          "type" : "string"
+        },
+        "ISSUINGOFFICEADDR_PROVINCE" : {
+          "type" : "string"
+        },
+        "ISSUINGOFFICEADDR_COUNTY" : {
+          "type" : "string"
+        },
+        "ISSUINGOFFICEADDR_CUSTOM1" : {
+          "type" : "string"
+        },
+        "ISSUINGOFFICEADDR_CUSTOM2" : {
+          "type" : "string"
+        },
+        "ISSUINGOFFICEADDR_CUSTOM3" : {
+          "type" : "string"
+        },
+        "ISSUINGOFFICEADDR_CUSTOM4" : {
+          "type" : "string"
+        },
+        "ISSUINGOFFICEADDR_CUSTOM5" : {
+          "type" : "string"
+        },
+        "ADMINADDR_CODE" : {
+          "type" : "string"
+        },
+        "ADMINADDR_NAME" : {
+          "type" : "string"
+        },
+        "ADMINADDR_ADDRESS1" : {
+          "type" : "string"
+        },
+        "ADMINADDR_ADDRESS2" : {
+          "type" : "string"
+        },
+        "ADMINADDR_ADDRESS3" : {
+          "type" : "string"
+        },
+        "ADMINADDR_ADDRESS4" : {
+          "type" : "string"
+        },
+        "ADMINADDR_CITY" : {
+          "type" : "string"
+        },
+        "ADMINADDR_STATE" : {
+          "type" : "string"
+        },
+        "ADMINADDR_ZIP" : {
+          "type" : "string"
+        },
+        "ADMINADDR_COUNTRY" : {
+          "type" : "string"
+        },
+        "ADMINADDR_PHONE" : {
+          "type" : "string"
+        },
+        "ADMINADDR_FAX" : {
+          "type" : "string"
+        },
+        "ADMINADDR_EMAIL" : {
+          "type" : "string"
+        },
+        "ADMINOFFICEADDR_REGIONCODE" : {
+          "type" : "string"
+        },
+        "ADMINOFFICEADDR_PROVINCE" : {
+          "type" : "string"
+        },
+        "ADMINOFFICEADDR_COUNTY" : {
+          "type" : "string"
+        },
+        "ADMINOFFICEADDR_CUSTOM1" : {
+          "type" : "string"
+        },
+        "ADMINOFFICEADDR_CUSTOM2" : {
+          "type" : "string"
+        },
+        "ADMINOFFICEADDR_CUSTOM3" : {
+          "type" : "string"
+        },
+        "ADMINOFFICEADDR_CUSTOM4" : {
+          "type" : "string"
+        },
+        "ADMINOFFICEADDR_CUSTOM5" : {
+          "type" : "string"
+        },
+        "INVADDR_CODE" : {
+          "type" : "string"
+        },
+        "INVADDR_NAME" : {
+          "type" : "string"
+        },
+        "INVADDR_ADDRESS1" : {
+          "type" : "string"
+        },
+        "INVADDR_ADDRESS2" : {
+          "type" : "string"
+        },
+        "INVADDR_ADDRESS3" : {
+          "type" : "string"
+        },
+        "INVADDR_ADDRESS4" : {
+          "type" : "string"
+        },
+        "INVADDR_CITY" : {
+          "type" : "string"
+        },
+        "INVADDR_STATE" : {
+          "type" : "string"
+        },
+        "INVADDR_ZIP" : {
+          "type" : "string"
+        },
+        "INVADDR_COUNTRY" : {
+          "type" : "string"
+        },
+        "INVADDR_PHONE" : {
+          "type" : "string"
+        },
+        "INVADDR_FAX" : {
+          "type" : "string"
+        },
+        "INVADDR_EMAIL" : {
+          "type" : "string"
+        },
+        "INVOFFICEADDR_REGIONCODE" : {
+          "type" : "string"
+        },
+        "INVOFFICEADDR_PROVINCE" : {
+          "type" : "string"
+        },
+        "INVOFFICEADDR_COUNTY" : {
+          "type" : "string"
+        },
+        "INVOFFICEADDR_CUSTOM1" : {
+          "type" : "string"
+        },
+        "INVOFFICEADDR_CUSTOM2" : {
+          "type" : "string"
+        },
+        "INVOFFICEADDR_CUSTOM3" : {
+          "type" : "string"
+        },
+        "INVOFFICEADDR_CUSTOM4" : {
+          "type" : "string"
+        },
+        "INVOFFICEADDR_CUSTOM5" : {
+          "type" : "string"
+        },
+        "PAYMENTADDR_CODE" : {
+          "type" : "string"
+        },
+        "PAYMENTADDR_NAME" : {
+          "type" : "string"
+        },
+        "PAYMENTADDR_ADDRESS1" : {
+          "type" : "string"
+        },
+        "PAYMENTADDR_ADDRESS2" : {
+          "type" : "string"
+        },
+        "PAYMENTADDR_ADDRESS3" : {
+          "type" : "string"
+        },
+        "PAYMENTADDR_ADDRESS4" : {
+          "type" : "string"
+        },
+        "PAYMENTADDR_CITY" : {
+          "type" : "string"
+        },
+        "PAYMENTADDR_STATE" : {
+          "type" : "string"
+        },
+        "PAYMENTADDR_ZIP" : {
+          "type" : "string"
+        },
+        "PAYMENTADDR_COUNTRY" : {
+          "type" : "string"
+        },
+        "PAYMENTADDR_PHONE" : {
+          "type" : "string"
+        },
+        "PAYMENTADDR_FAX" : {
+          "type" : "string"
+        },
+        "PAYMENTADDR_EMAIL" : {
+          "type" : "string"
+        },
+        "PAYMENTADDR_REGIONCODE" : {
+          "type" : "string"
+        },
+        "PAYMENTADDR_PROVINCE" : {
+          "type" : "string"
+        },
+        "PAYMENTADDR_COUNTY" : {
+          "type" : "string"
+        },
+        "PAYMENTADDR_CUSTOM1" : {
+          "type" : "string"
+        },
+        "PAYMENTADDR_CUSTOM2" : {
+          "type" : "string"
+        },
+        "PAYMENTADDR_CUSTOM3" : {
+          "type" : "string"
+        },
+        "PAYMENTADDR_CUSTOM4" : {
+          "type" : "string"
+        },
+        "PAYMENTADDR_CUSTOM5" : {
+          "type" : "string"
+        },
+        "TRANSACTIONINDICATOR" : {
+          "type" : "string"
+        },
+        "CODETERMINATION" : {
+          "type" : "string"
+        },
+        "HCAS_PRE_WS" : {
+          "type" : "string"
+        },
+        "HCAS_PRE_UPIID" : {
+          "type" : "string"
+        },
+        "HCAS_BASE_RECONSTRUCT" : {
+          "type" : "string"
+        },
+        "HCAS_PARENT_RECONSTRUCT" : {
+          "type" : "string"
+        },
+        "SYSTEM_UTILITY" : {
+          "type" : "string"
+        },
+        "FDALETTEROFCREDIT" : {
+          "type" : "string"
+        },
+        "PURPOSE" : {
+          "type" : "string"
+        },
+        "GTANDCNUMBER" : {
+          "type" : "string"
+        },
+        "PRIORITYORDER" : {
+          "type" : "string"
+        },
+        "APPROVALHISTORY" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/OutboundInterface.AwardModels.APPROVALHISTORY"
+          }
+        },
+        "AWARDLINE" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/OutboundInterface.AwardModels.AWARDLINE"
+          }
+        },
+        "VENDOR" : {
+          "$ref" : "#/definitions/OutboundInterface.AwardModels.VENDOR"
+        }
+      }
+    },
+    "OutboundInterface.AwardModels.SYSTEMACCESS" : {
+      "type" : "object",
+      "properties" : {
+        "SYSTEMID" : {
+          "type" : "string"
+        },
+        "SYSTEMPASSWORD" : {
+          "type" : "string"
+        },
+        "APPLICATIONID" : {
+          "type" : "string"
+        },
+        "APPLICATIONPASSWORD" : {
+          "type" : "string"
+        },
+        "USERID" : {
+          "type" : "string"
+        },
+        "USERPASSWORD" : {
+          "type" : "string"
+        }
+      }
+    },
+    "OutboundInterface.AwardModels.APPROVALHISTORY" : {
+      "type" : "object",
+      "properties" : {
+        "APPR_SEQNUM" : {
+          "type" : "string"
+        },
+        "APPR_USERID" : {
+          "type" : "string"
+        },
+        "APPR_FIRSTNAME" : {
+          "type" : "string"
+        },
+        "APPR_LASTNAME" : {
+          "type" : "string"
+        },
+        "APPR_EMAIL" : {
+          "type" : "string"
+        },
+        "APPR_ROUTEROLE" : {
+          "type" : "string"
+        },
+        "APPR_APPROVEDATE" : {
+          "type" : "string",
+          "format" : "date-time"
+        },
+        "APPR_COMMENTS" : {
+          "type" : "string"
+        }
+      }
+    },
+    "OutboundInterface.AwardModels.AWARDLINE" : {
+      "type" : "object",
+      "properties" : {
+        "ADDEDITCANCEL" : {
+          "type" : "string"
+        },
+        "VERSION_NO" : {
+          "type" : "string"
+        },
+        "ASSOCREQNUM" : {
+          "type" : "string"
+        },
+        "ASSOCREQLI" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "ASSOCREQSUBLI" : {
+          "type" : "string"
+        },
+        "PAYMTTERMS1PERCENT" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "PAYMTTERMS1DAYS" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "PAYMTTERMS1" : {
+          "type" : "string"
+        },
+        "PAYMTTERMS2PERCENT" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "PAYMTTERMS2DAYS" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "PAYMTTERMS2" : {
+          "type" : "string"
+        },
+        "MATCHRULE" : {
+          "type" : "string"
+        },
+        "ITEMNUM" : {
+          "type" : "string"
+        },
+        "SEQNUM" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "SUBNUM" : {
+          "type" : "string"
+        },
+        "ITEMAWARDTYPE" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "DESCR" : {
+          "type" : "string"
+        },
+        "INTERNALNOTETEXT" : {
+          "type" : "string"
+        },
+        "HEADERTEXT" : {
+          "type" : "string"
+        },
+        "FOOTERTEXT" : {
+          "type" : "string"
+        },
+        "INSPTEXT" : {
+          "type" : "string"
+        },
+        "NOTETOBUYERTEXT" : {
+          "type" : "string"
+        },
+        "QUALIFIER" : {
+          "type" : "string"
+        },
+        "LINEITEMTYPE" : {
+          "type" : "string"
+        },
+        "QUANTITY" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "UNIT" : {
+          "type" : "string"
+        },
+        "UNITPRICE" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "AMOUNT" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "OBLIGATEDAMT" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "TOTALOBLIGATEDAMT" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "REMAININGOBLIGATEDAMT" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "TRADEDISCOUNT" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "CREDITAMT" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "COSTAVOIDANCE" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "MINQTY" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "MINAMT" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "GUARANTEE" : {
+          "type" : "string"
+        },
+        "AWARDFEE" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "BASEFEE" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "TARGETCOST" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "GOVTSHARE" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "FIXEDFEE" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "COMPFORM" : {
+          "type" : "string"
+        },
+        "TARGETFEE" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "TARGETFEELOW" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "TARGETFEEHIGH" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "PROFITADJFORMULA" : {
+          "type" : "string"
+        },
+        "PROFITFEE" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "PRICECEILING" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "PARENTCONTRACTITEMNUM" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "PARENTCONTRACTSUBNUM" : {
+          "type" : "string"
+        },
+        "ALLOWDELIVERYORDERS" : {
+          "type" : "string"
+        },
+        "DELIVERYORDEROBLIGATES" : {
+          "type" : "string"
+        },
+        "INCRFUNDED" : {
+          "type" : "string"
+        },
+        "INCRFUNDEDTHRUDATE" : {
+          "type" : "string",
+          "format" : "date-time"
+        },
+        "INCRFUNDEDAMT" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "OPTIONLI" : {
+          "type" : "string"
+        },
+        "OPTIONANTICEXERDATE" : {
+          "type" : "string",
+          "format" : "date-time"
+        },
+        "OPTIONDAYS" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "OPTIONEXERCISEDATE" : {
+          "type" : "string",
+          "format" : "date-time"
+        },
+        "POP_STARTDATE" : {
+          "type" : "string",
+          "format" : "date-time"
+        },
+        "POP_ENDDATE" : {
+          "type" : "string",
+          "format" : "date-time"
+        },
+        "PRODCODE" : {
+          "type" : "string"
+        },
+        "USERPRODUCTCODE" : {
+          "type" : "string"
+        },
+        "USERPRODUCTCODEDESCR" : {
+          "type" : "string"
+        },
+        "PROJECTID" : {
+          "type" : "string"
+        },
+        "PROJECTTITLE" : {
+          "type" : "string"
+        },
+        "ECOPRICEADJUST" : {
+          "type" : "string"
+        },
+        "VARIATIONPERCENT" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "GFE" : {
+          "type" : "string"
+        },
+        "PRIORITY" : {
+          "type" : "string"
+        },
+        "INSPECTIONREQD" : {
+          "type" : "string"
+        },
+        "SPECHANDLING" : {
+          "type" : "string"
+        },
+        "ACCOUNTABLEPROPERTY" : {
+          "type" : "string"
+        },
+        "USSGLTRANSCODE" : {
+          "type" : "string"
+        },
+        "SECURITYCLASSIFICATIONCODE" : {
+          "type" : "string"
+        },
+        "FOB" : {
+          "type" : "string"
+        },
+        "REIMBURSABLEAGREEMENT" : {
+          "type" : "string"
+        },
+        "ASSISTED_ACQUISITION" : {
+          "type" : "string"
+        },
+        "TYPE_SERV_REQUIREMENTS_CODE" : {
+          "type" : "string"
+        },
+        "ORIGINCITY" : {
+          "type" : "string"
+        },
+        "ORIGINSTATE" : {
+          "type" : "string"
+        },
+        "GENERIC1" : {
+          "type" : "string"
+        },
+        "GENERIC2" : {
+          "type" : "string"
+        },
+        "GENERIC3" : {
+          "type" : "string"
+        },
+        "GENERIC4" : {
+          "type" : "string"
+        },
+        "GENERIC5" : {
+          "type" : "string"
+        },
+        "GENERIC6" : {
+          "type" : "string"
+        },
+        "GENERIC7" : {
+          "type" : "string"
+        },
+        "GENERIC8" : {
+          "type" : "string"
+        },
+        "GENERIC9" : {
+          "type" : "string"
+        },
+        "GENERIC10" : {
+          "type" : "string"
+        },
+        "GENERIC11" : {
+          "type" : "string"
+        },
+        "GENERIC12" : {
+          "type" : "string"
+        },
+        "GENERIC13" : {
+          "type" : "string"
+        },
+        "GENERIC14" : {
+          "type" : "string"
+        },
+        "GENERIC15" : {
+          "type" : "string"
+        },
+        "GENERIC16" : {
+          "type" : "string"
+        },
+        "GENERIC17" : {
+          "type" : "string"
+        },
+        "GENERIC18" : {
+          "type" : "string"
+        },
+        "GENERIC19" : {
+          "type" : "string"
+        },
+        "GENERIC20" : {
+          "type" : "string"
+        },
+        "GENERIC21" : {
+          "type" : "string"
+        },
+        "GENERIC22" : {
+          "type" : "string"
+        },
+        "GENERIC23" : {
+          "type" : "string"
+        },
+        "GENERIC24" : {
+          "type" : "string"
+        },
+        "GENERIC25" : {
+          "type" : "string"
+        },
+        "GENERIC26" : {
+          "type" : "string"
+        },
+        "GENERIC27" : {
+          "type" : "string"
+        },
+        "GENERIC28" : {
+          "type" : "string"
+        },
+        "GENERIC29" : {
+          "type" : "string"
+        },
+        "GENERIC30" : {
+          "type" : "string"
+        },
+        "GENERIC31" : {
+          "type" : "string"
+        },
+        "GENERIC32" : {
+          "type" : "string"
+        },
+        "GENERIC33" : {
+          "type" : "string"
+        },
+        "GENERIC34" : {
+          "type" : "string"
+        },
+        "GENERIC35" : {
+          "type" : "string"
+        },
+        "GENERIC36" : {
+          "type" : "string"
+        },
+        "GENERIC37" : {
+          "type" : "string"
+        },
+        "GENERIC38" : {
+          "type" : "string"
+        },
+        "GENERIC39" : {
+          "type" : "string"
+        },
+        "GENERIC40" : {
+          "type" : "string"
+        },
+        "EXTCUSTOM1" : {
+          "type" : "string"
+        },
+        "EXTCUSTOM2" : {
+          "type" : "string"
+        },
+        "EXTCUSTOM3" : {
+          "type" : "string"
+        },
+        "EXTCUSTOM4" : {
+          "type" : "string"
+        },
+        "EXTCUSTOM5" : {
+          "type" : "string"
+        },
+        "EXTCUSTOMAMT1" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "EXTCUSTOMAMT2" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "EXTCUSTOMAMT3" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "EXTCUSTOMAMT4" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "EXTCUSTOMAMT5" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "STATUS" : {
+          "type" : "string"
+        },
+        "STATUSDATE" : {
+          "type" : "string",
+          "format" : "date-time"
+        },
+        "SHIPMENT" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/OutboundInterface.AwardModels.SHIPMENT"
+          }
+        }
+      }
+    },
+    "OutboundInterface.AwardModels.VENDOR" : {
+      "type" : "object",
+      "properties" : {
+        "VENDORID" : {
+          "type" : "string"
+        },
+        "DUNS" : {
+          "type" : "string"
+        },
+        "DUNSPLUS4" : {
+          "type" : "string"
+        },
+        "TIN" : {
+          "type" : "string"
+        },
+        "CAGE" : {
+          "type" : "string"
+        },
+        "NAME" : {
+          "type" : "string"
+        },
+        "CONTACTNAME" : {
+          "type" : "string"
+        },
+        "ADDRESSCODE" : {
+          "type" : "string"
+        },
+        "ADDRESS1" : {
+          "type" : "string"
+        },
+        "ADDRESS2" : {
+          "type" : "string"
+        },
+        "ADDRESS3" : {
+          "type" : "string"
+        },
+        "ADDRESS4" : {
+          "type" : "string"
+        },
+        "CITY" : {
+          "type" : "string"
+        },
+        "STATE" : {
+          "type" : "string"
+        },
+        "ZIP" : {
+          "type" : "string"
+        },
+        "COUNTRY" : {
+          "type" : "string"
+        },
+        "PHONE" : {
+          "type" : "string"
+        },
+        "FAX" : {
+          "type" : "string"
+        },
+        "EMAIL" : {
+          "type" : "string"
+        },
+        "REGIONCODE" : {
+          "type" : "string"
+        },
+        "PROVINCE" : {
+          "type" : "string"
+        },
+        "COUNTY" : {
+          "type" : "string"
+        },
+        "ADDR_CUSTOM1" : {
+          "type" : "string"
+        },
+        "ADDR_CUSTOM2" : {
+          "type" : "string"
+        },
+        "ADDR_CUSTOM3" : {
+          "type" : "string"
+        },
+        "ADDR_CUSTOM4" : {
+          "type" : "string"
+        },
+        "ADDR_CUSTOM5" : {
+          "type" : "string"
+        },
+        "REMIT_TO_NAME" : {
+          "type" : "string"
+        },
+        "REMIT_TO_CONTACTNAME" : {
+          "type" : "string"
+        },
+        "REMIT_TO_ADDRESSCODE" : {
+          "type" : "string"
+        },
+        "REMIT_TO_ADDRESS1" : {
+          "type" : "string"
+        },
+        "REMIT_TO_ADDRESS2" : {
+          "type" : "string"
+        },
+        "REMIT_TO_ADDRESS3" : {
+          "type" : "string"
+        },
+        "REMIT_TO_ADDRESS4" : {
+          "type" : "string"
+        },
+        "REMIT_TO_CITY" : {
+          "type" : "string"
+        },
+        "REMIT_TO_STATE" : {
+          "type" : "string"
+        },
+        "REMIT_TO_ZIP" : {
+          "type" : "string"
+        },
+        "REMIT_TO_COUNTRY" : {
+          "type" : "string"
+        },
+        "REMIT_TO_PHONE" : {
+          "type" : "string"
+        },
+        "REMIT_TO_FAX" : {
+          "type" : "string"
+        },
+        "REMIT_TO_EMAIL" : {
+          "type" : "string"
+        },
+        "REMITTO_REGIONCODE" : {
+          "type" : "string"
+        },
+        "REMITTO_PROVINCE" : {
+          "type" : "string"
+        },
+        "REMITTO_COUNTY" : {
+          "type" : "string"
+        },
+        "REMITTO_ADDR_CUSTOM1" : {
+          "type" : "string"
+        },
+        "REMITTO_ADDR_CUSTOM2" : {
+          "type" : "string"
+        },
+        "REMITTO_ADDR_CUSTOM3" : {
+          "type" : "string"
+        },
+        "REMITTO_ADDR_CUSTOM4" : {
+          "type" : "string"
+        },
+        "REMITTO_ADDR_CUSTOM5" : {
+          "type" : "string"
+        },
+        "SRVCCONTROLNUM" : {
+          "type" : "string"
+        },
+        "REQUESTING_NAME" : {
+          "type" : "string"
+        },
+        "REQUESTING_CONTACTNAME" : {
+          "type" : "string"
+        },
+        "REQUESTING_ADDRESSCODE" : {
+          "type" : "string"
+        },
+        "REQUESTING_ADDRESS1" : {
+          "type" : "string"
+        },
+        "REQUESTING_ADDRESS2" : {
+          "type" : "string"
+        },
+        "REQUESTING_ADDRESS3" : {
+          "type" : "string"
+        },
+        "REQUESTING_ADDRESS4" : {
+          "type" : "string"
+        },
+        "REQUESTING_CITY" : {
+          "type" : "string"
+        },
+        "REQUESTING_STATE" : {
+          "type" : "string"
+        },
+        "REQUESTING_ZIP" : {
+          "type" : "string"
+        },
+        "REQUESTING_COUNTRY" : {
+          "type" : "string"
+        },
+        "REQUESTING_PHONE" : {
+          "type" : "string"
+        },
+        "REQUESTING_FAX" : {
+          "type" : "string"
+        },
+        "REQUESTING_EMAIL" : {
+          "type" : "string"
+        },
+        "REQUESTING_REGIONCODE" : {
+          "type" : "string"
+        },
+        "REQUESTING_PROVINCE" : {
+          "type" : "string"
+        },
+        "REQUESTING_COUNTY" : {
+          "type" : "string"
+        },
+        "REQUESTING_ADDR_CUSTOM1" : {
+          "type" : "string"
+        },
+        "REQUESTING_ADDR_CUSTOM2" : {
+          "type" : "string"
+        },
+        "REQUESTING_ADDR_CUSTOM3" : {
+          "type" : "string"
+        },
+        "REQUESTING_ADDR_CUSTOM4" : {
+          "type" : "string"
+        },
+        "REQUESTING_ADDR_CUSTOM5" : {
+          "type" : "string"
+        },
+        "SERVICING_VENDORID" : {
+          "type" : "string"
+        },
+        "SERVICING_DUNS" : {
+          "type" : "string"
+        },
+        "SERVICING_NAME" : {
+          "type" : "string"
+        },
+        "SERVICING_CONTACTNAME" : {
+          "type" : "string"
+        },
+        "SERVICING_ADDRESSCODE" : {
+          "type" : "string"
+        },
+        "SERVICING_ADDRESS1" : {
+          "type" : "string"
+        },
+        "SERVICING_ADDRESS2" : {
+          "type" : "string"
+        },
+        "SERVICING_ADDRESS3" : {
+          "type" : "string"
+        },
+        "SERVICING_ADDRESS4" : {
+          "type" : "string"
+        },
+        "SERVICING_CITY" : {
+          "type" : "string"
+        },
+        "SERVICING_STATE" : {
+          "type" : "string"
+        },
+        "SERVICING_ZIP" : {
+          "type" : "string"
+        },
+        "SERVICING_COUNTRY" : {
+          "type" : "string"
+        },
+        "SERVICING_PHONE" : {
+          "type" : "string"
+        },
+        "SERVICING_FAX" : {
+          "type" : "string"
+        },
+        "SERVICING_EMAIL" : {
+          "type" : "string"
+        },
+        "SERVICING_REGIONCODE" : {
+          "type" : "string"
+        },
+        "SERVICING_PROVINCE" : {
+          "type" : "string"
+        },
+        "SERVICING_COUNTY" : {
+          "type" : "string"
+        },
+        "SERVICING_ADDR_CUSTOM1" : {
+          "type" : "string"
+        },
+        "SERVICING_ADDR_CUSTOM2" : {
+          "type" : "string"
+        },
+        "SERVICING_ADDR_CUSTOM3" : {
+          "type" : "string"
+        },
+        "SERVICING_ADDR_CUSTOM4" : {
+          "type" : "string"
+        },
+        "SERVICING_ADDR_CUSTOM5" : {
+          "type" : "string"
+        },
+        "EXTVENDORID" : {
+          "type" : "string"
+        },
+        "EXTVENDORSITEID" : {
+          "type" : "string"
+        },
+        "BUSINESS_PARTNER_NETWORK" : {
+          "type" : "string"
+        },
+        "BUSINESS_PARTNER_NETWORK_PLUS4" : {
+          "type" : "string"
+        },
+        "BUSINESS_PARTNER_NETWORK_PERLN" : {
+          "type" : "string"
+        },
+        "REQUEST_FUNDING_OFFICIAL_NAME" : {
+          "type" : "string"
+        },
+        "REQUEST_FUNDING_OFFICIAL_TITLE" : {
+          "type" : "string"
+        },
+        "REQUEST_FUNDING_OFFICIAL_PHONE" : {
+          "type" : "string"
+        },
+        "REQUEST_FUNDING_OFFICIAL_FAX" : {
+          "type" : "string"
+        },
+        "REQUEST_FUNDING_PROOFFICLNAME" : {
+          "type" : "string"
+        },
+        "REQUEST_FUNDING_PROOFFICLTITLE" : {
+          "type" : "string"
+        },
+        "REQUEST_FUNDING_PROOFFICLPHONE" : {
+          "type" : "string"
+        },
+        "REQUEST_FUNDING_PROOFFICLFAX" : {
+          "type" : "string"
+        },
+        "REQUEST_FUNDING_PROOFFICLEMAIL" : {
+          "type" : "string"
+        },
+        "REQUEST_AGENCY_POC_PHONE" : {
+          "type" : "string"
+        },
+        "REQUEST_AGENCY_POC_FAX" : {
+          "type" : "string"
+        },
+        "REQUEST_AGENCY_POC_EMAIL" : {
+          "type" : "string"
+        }
+      }
+    },
+    "OutboundInterface.AwardModels.SHIPMENT" : {
+      "type" : "object",
+      "properties" : {
+        "SHIPTOSEQNUM" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "SHIPTOADDR_CODE" : {
+          "type" : "string"
+        },
+        "SHIPTOADDR_NAME" : {
+          "type" : "string"
+        },
+        "SHIPTOADDR_ADDRESS1" : {
+          "type" : "string"
+        },
+        "SHIPTOADDR_ADDRESS2" : {
+          "type" : "string"
+        },
+        "SHIPTOADDR_ADDRESS3" : {
+          "type" : "string"
+        },
+        "SHIPTOADDR_ADDRESS4" : {
+          "type" : "string"
+        },
+        "SHIPTOADDR_CITY" : {
+          "type" : "string"
+        },
+        "SHIPTOADDR_STATE" : {
+          "type" : "string"
+        },
+        "SHIPTOADDR_ZIP" : {
+          "type" : "string"
+        },
+        "SHIPTOADDR_COUNTRY" : {
+          "type" : "string"
+        },
+        "SHIPTOADDR_PHONE" : {
+          "type" : "string"
+        },
+        "SHIPTOADDR_FAX" : {
+          "type" : "string"
+        },
+        "SHIPTOADDR_EMAIL" : {
+          "type" : "string"
+        },
+        "SHIPTOADDR_REGIONCODE" : {
+          "type" : "string"
+        },
+        "SHIPTOADDR_PROVINCE" : {
+          "type" : "string"
+        },
+        "SHIPTOADDR_COUNTY" : {
+          "type" : "string"
+        },
+        "SHIPTOADDR_CUSTOM1" : {
+          "type" : "string"
+        },
+        "SHIPTOADDR_CUSTOM2" : {
+          "type" : "string"
+        },
+        "SHIPTOADDR_CUSTOM3" : {
+          "type" : "string"
+        },
+        "SHIPTOADDR_CUSTOM4" : {
+          "type" : "string"
+        },
+        "SHIPTOADDR_CUSTOM5" : {
+          "type" : "string"
+        },
+        "MARKFORADDR_CODE" : {
+          "type" : "string"
+        },
+        "MARKFORADDR_NAME" : {
+          "type" : "string"
+        },
+        "MARKFORADDR_ADDRESS1" : {
+          "type" : "string"
+        },
+        "MARKFORADDR_ADDRESS2" : {
+          "type" : "string"
+        },
+        "MARKFORADDR_ADDRESS3" : {
+          "type" : "string"
+        },
+        "MARKFORADDR_ADDRESS4" : {
+          "type" : "string"
+        },
+        "MARKFORADDR_CITY" : {
+          "type" : "string"
+        },
+        "MARKFORADDR_STATE" : {
+          "type" : "string"
+        },
+        "MARKFORADDR_ZIP" : {
+          "type" : "string"
+        },
+        "MARKFORADDR_COUNTRY" : {
+          "type" : "string"
+        },
+        "MARKFORADDR_PHONE" : {
+          "type" : "string"
+        },
+        "MARKFORADDR_FAX" : {
+          "type" : "string"
+        },
+        "MARKFORADDR_EMAIL" : {
+          "type" : "string"
+        },
+        "MARKFORADDR_REGIONCODE" : {
+          "type" : "string"
+        },
+        "MARKFORADDR_PROVINCE" : {
+          "type" : "string"
+        },
+        "MARKFORADDR_COUNTY" : {
+          "type" : "string"
+        },
+        "MARKFORADDR_CUSTOM1" : {
+          "type" : "string"
+        },
+        "MARKFORADDR_CUSTOM2" : {
+          "type" : "string"
+        },
+        "MARKFORADDR_CUSTOM3" : {
+          "type" : "string"
+        },
+        "MARKFORADDR_CUSTOM4" : {
+          "type" : "string"
+        },
+        "MARKFORADDR_CUSTOM5" : {
+          "type" : "string"
+        },
+        "QUANTITY" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "AMOUNT" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "DELIVERYDATE" : {
+          "type" : "string",
+          "format" : "date-time"
+        },
+        "DELIVERYDAYSAFTERAWARD" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "DAYSAFTERTYPE" : {
+          "type" : "string"
+        },
+        "TANKSIZE" : {
+          "type" : "string"
+        },
+        "TANKDESC" : {
+          "type" : "string"
+        },
+        "PRODUCT_POC_NAME" : {
+          "type" : "string"
+        },
+        "PRODUCT_POC_TITLE" : {
+          "type" : "string"
+        },
+        "PRODUCT_POC_PHONE" : {
+          "type" : "string"
+        },
+        "PRODUCT_POC_EMAIL" : {
+          "type" : "string"
+        },
+        "PRODUCT_POC_SPECIAL_SHIP_INFO" : {
+          "type" : "string"
+        },
+        "ACCOUNT" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/OutboundInterface.AwardModels.ACCOUNT"
+          }
+        }
+      }
+    },
+    "OutboundInterface.AwardModels.ACCOUNT" : {
+      "type" : "object",
+      "properties" : {
+        "ACCTSEQNUM" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "FINCHANGETYPE" : {
+          "type" : "string"
+        },
+        "ACCOUNTCODE" : {
+          "type" : "string"
+        },
+        "ACCTFIELD1" : {
+          "type" : "string"
+        },
+        "ACCTFIELD2" : {
+          "type" : "string"
+        },
+        "ACCTFIELD3" : {
+          "type" : "string"
+        },
+        "ACCTFIELD4" : {
+          "type" : "string"
+        },
+        "ACCTFIELD5" : {
+          "type" : "string"
+        },
+        "ACCTFIELD6" : {
+          "type" : "string"
+        },
+        "ACCTFIELD7" : {
+          "type" : "string"
+        },
+        "ACCTFIELD8" : {
+          "type" : "string"
+        },
+        "ACCTFIELD9" : {
+          "type" : "string"
+        },
+        "ACCTFIELD10" : {
+          "type" : "string"
+        },
+        "ACCTFIELD11" : {
+          "type" : "string"
+        },
+        "ACCTFIELD12" : {
+          "type" : "string"
+        },
+        "ACCTFIELD13" : {
+          "type" : "string"
+        },
+        "ACCTFIELD14" : {
+          "type" : "string"
+        },
+        "ACCTFIELD15" : {
+          "type" : "string"
+        },
+        "ACCTFIELD16" : {
+          "type" : "string"
+        },
+        "ACCTFIELD17" : {
+          "type" : "string"
+        },
+        "ACCTFIELD18" : {
+          "type" : "string"
+        },
+        "ACCTFIELD19" : {
+          "type" : "string"
+        },
+        "ACCTFIELD20" : {
+          "type" : "string"
+        },
+        "ACCTFIELD21" : {
+          "type" : "string"
+        },
+        "ACCTFIELD22" : {
+          "type" : "string"
+        },
+        "ACCTFIELD23" : {
+          "type" : "string"
+        },
+        "ACCTFIELD24" : {
+          "type" : "string"
+        },
+        "ACCTFIELD25" : {
+          "type" : "string"
+        },
+        "ACCTFIELD26" : {
+          "type" : "string"
+        },
+        "ACCTFIELD27" : {
+          "type" : "string"
+        },
+        "ACCTFIELD28" : {
+          "type" : "string"
+        },
+        "ACCTFIELD29" : {
+          "type" : "string"
+        },
+        "ACCTFIELD30" : {
+          "type" : "string"
+        },
+        "FUNDSTYPE" : {
+          "type" : "string"
+        },
+        "INCLUDESRECOVERYACTFUNDS" : {
+          "type" : "string"
+        },
+        "TASSEG1" : {
+          "type" : "string"
+        },
+        "TASSEG2" : {
+          "type" : "string"
+        },
+        "TASSEG3" : {
+          "type" : "string"
+        },
+        "TAS" : {
+          "type" : "string"
+        },
+        "QUANTITY" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "AMOUNT" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "AMT" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "TOTALAMT" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "REMAININGAMT" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "SUBJECTTOFUNDING" : {
+          "type" : "string"
+        },
+        "PROJECTNUM" : {
+          "type" : "string"
+        },
+        "TASKNUM" : {
+          "type" : "string"
+        },
+        "EXPENDITUREORG" : {
+          "type" : "string"
+        },
+        "EXPENDITUREDATE" : {
+          "type" : "string",
+          "format" : "date-time"
+        },
+        "EXPENDITURETYPE" : {
+          "type" : "string"
+        },
+        "FUNDOVERRIDE" : {
+          "type" : "string"
+        },
+        "BLIPROGRAMELEMENT" : {
+          "type" : "string"
+        },
+        "EXTCUSTOM1" : {
+          "type" : "string"
+        },
+        "EXTCUSTOM2" : {
+          "type" : "string"
+        },
+        "EXTCUSTOM3" : {
+          "type" : "string"
+        },
+        "EXTCUSTOM4" : {
+          "type" : "string"
+        },
+        "EXTCUSTOM5" : {
+          "type" : "string"
+        },
+        "EXTCUSTOMAMT1" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "EXTCUSTOMAMT2" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "EXTCUSTOMAMT3" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "EXTCUSTOMAMT4" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "EXTCUSTOMAMT5" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "ADVANCE_PAYMENT_INDICATOR" : {
+          "type" : "string"
+        },
+        "BPNPLUS4" : {
+          "type" : "string"
+        },
+        "TAS_SP" : {
+          "type" : "string"
+        },
+        "TAS_ATA" : {
+          "type" : "string"
+        },
+        "TAS_AID" : {
+          "type" : "string"
+        },
+        "TAS_BPOA" : {
+          "type" : "string"
+        },
+        "TAS_EPOA" : {
+          "type" : "string"
+        },
+        "TAS_A_CODE" : {
+          "type" : "string"
+        },
+        "TAS_MAIN" : {
+          "type" : "string"
+        },
+        "TAS_SUB" : {
+          "type" : "string"
+        },
+        "ASSOCIATEDREQUISITIONINFO" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/OutboundInterface.AwardModels.ASSOCIATEDREQUISITIONINFO"
+          }
+        }
+      }
+    },
+    "OutboundInterface.AwardModels.ASSOCIATEDREQUISITIONINFO" : {
+      "type" : "object",
+      "properties" : {
+        "ASSOCREQNUM" : {
+          "type" : "string"
+        },
+        "ASSOCREQLI" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "ASSOCREQSUBLI" : {
+          "type" : "string"
+        },
+        "ASSOCREQSHIPTOSEQNUM" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "ASSOCREQACCTID" : {
+          "type" : "integer",
+          "format" : "int32"
+        }
+      }
+    },
+    "OutboundInterfaces.Models.OutboundCallResponse" : {
+      "type" : "object",
+      "properties" : {
+        "success" : {
+          "type" : "string"
+        },
+        "errormessage" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/OutboundInterfaces.Models.ErrorMessage"
+          }
+        },
+        "resourceid" : {
+          "type" : "string"
+        },
+        "requestjson" : {
+          "type" : "string"
+        },
+        "responsejson" : {
+          "type" : "string"
+        },
+        "addtionalinfo" : {
+          "$ref" : "#/definitions/OutboundInterfaces.Models.AddtionalInfo"
+        }
+      }
+    },
+    "OutboundInterfaces.Models.ErrorMessage" : {
+      "type" : "object",
+      "properties" : {
+        "ErrorDescription" : {
+          "type" : "string"
+        },
+        "ErrorCode" : {
+          "type" : "string"
+        },
+        "ErrorType" : {
+          "type" : "string"
+        }
+      }
+    },
+    "OutboundInterfaces.Models.AddtionalInfo" : {
+      "type" : "object",
+      "properties" : {
+        "ApprovalStatus" : {
+          "type" : "string"
+        },
+        "sourceSystemID" : {
+          "type" : "string"
+        },
+        "transactionDate" : {
+          "type" : "string"
+        },
+        "SystemAccess_userID" : {
+          "type" : "string"
+        },
+        "SystemAccess_password" : {
+          "type" : "string"
+        }
+      }
+    },
+    "OutboundInterfaces.Models.OutboundReqClass" : {
+      "type" : "object",
+      "properties" : {
+        "TRANSACTION" : {
+          "$ref" : "#/definitions/OutboundInterfaces.Models.TRANSACTION"
+        },
+        "REQUISITION" : {
+          "$ref" : "#/definitions/OutboundInterfaces.Models.REQUISITION"
+        }
+      }
+    },
+    "OutboundInterfaces.Models.TRANSACTION" : {
+      "type" : "object",
+      "properties" : {
+        "TRANSACTIONID" : {
+          "type" : "string"
+        },
+        "SOURCESYSTEMID" : {
+          "type" : "string"
+        },
+        "TRANSACTIONDATE" : {
+          "type" : "string",
+          "format" : "date-time"
+        },
+        "SYSTEMACCESS" : {
+          "$ref" : "#/definitions/OutboundInterfaces.Models.SYSTEMACCESS"
+        }
+      }
+    },
+    "OutboundInterfaces.Models.REQUISITION" : {
+      "type" : "object",
+      "properties" : {
+        "CRITICALITY_DESIGNATOR" : {
+          "type" : "string"
+        },
+        "ORIGIN" : {
+          "type" : "string"
+        },
+        "EXTFINANCEDOC" : {
+          "type" : "string"
+        },
+        "EXTFINAPPROVEDDATE" : {
+          "type" : "string",
+          "format" : "date-time"
+        },
+        "REQUISITIONFORMOD" : {
+          "type" : "string"
+        },
+        "ASSOCIATEDAWARDNUM" : {
+          "type" : "string"
+        },
+        "PRIORALLZEROFLAG" : {
+          "type" : "string"
+        },
+        "FINCHANGETYPE" : {
+          "type" : "string"
+        },
+        "ACTIONREQUESTTYPE" : {
+          "type" : "string"
+        },
+        "CREATEDBY" : {
+          "type" : "string"
+        },
+        "CREATEDATE" : {
+          "type" : "string",
+          "format" : "date-time"
+        },
+        "LASTUPDATEDBY" : {
+          "type" : "string"
+        },
+        "LASTUPDATEDATE" : {
+          "type" : "string",
+          "format" : "date-time"
+        },
+        "REQUISITIONNUM" : {
+          "type" : "string"
+        },
+        "AMENDMENTNUM" : {
+          "type" : "string"
+        },
+        "DESCR" : {
+          "type" : "string"
+        },
+        "HEADERTEXT" : {
+          "type" : "string"
+        },
+        "FOOTERTEXT" : {
+          "type" : "string"
+        },
+        "CHANGETEXT" : {
+          "type" : "string"
+        },
+        "INTERNALNOTETEXT" : {
+          "type" : "string"
+        },
+        "NOTETOBUYERTEXT" : {
+          "type" : "string"
+        },
+        "ITEMS" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "AMOUNT" : {
+          "type" : "string"
+        },
+        "TOTALCOMMITTEDAMT" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "POP_STARTDATE" : {
+          "type" : "string",
+          "format" : "date-time"
+        },
+        "POP_ENDDATE" : {
+          "type" : "string",
+          "format" : "date-time"
+        },
+        "PRIMARYPRODCODE" : {
+          "type" : "string"
+        },
+        "PROJECTID" : {
+          "type" : "string"
+        },
+        "PROJECTTITLE" : {
+          "type" : "string"
+        },
+        "BASECURRENCYCODE" : {
+          "type" : "string"
+        },
+        "PRINTCURRENCYCODE" : {
+          "type" : "string"
+        },
+        "SECURITYCLASSIFICATIONCODE" : {
+          "type" : "string"
+        },
+        "GENERIC1" : {
+          "type" : "string"
+        },
+        "GENERIC2" : {
+          "type" : "string"
+        },
+        "GENERIC3" : {
+          "type" : "string"
+        },
+        "GENERIC4" : {
+          "type" : "string"
+        },
+        "GENERIC5" : {
+          "type" : "string"
+        },
+        "GENERIC6" : {
+          "type" : "string"
+        },
+        "GENERIC7" : {
+          "type" : "string"
+        },
+        "GENERIC8" : {
+          "type" : "string"
+        },
+        "GENERIC9" : {
+          "type" : "string"
+        },
+        "GENERIC10" : {
+          "type" : "string"
+        },
+        "GENERIC11" : {
+          "type" : "string"
+        },
+        "GENERIC12" : {
+          "type" : "string"
+        },
+        "GENERIC13" : {
+          "type" : "string"
+        },
+        "GENERIC14" : {
+          "type" : "string"
+        },
+        "GENERIC15" : {
+          "type" : "string"
+        },
+        "GENERIC16" : {
+          "type" : "string"
+        },
+        "GENERIC17" : {
+          "type" : "string"
+        },
+        "GENERIC18" : {
+          "type" : "string"
+        },
+        "GENERIC19" : {
+          "type" : "string"
+        },
+        "GENERIC20" : {
+          "type" : "string"
+        },
+        "GENERIC21" : {
+          "type" : "string"
+        },
+        "GENERIC22" : {
+          "type" : "string"
+        },
+        "GENERIC23" : {
+          "type" : "string"
+        },
+        "GENERIC24" : {
+          "type" : "string"
+        },
+        "GENERIC25" : {
+          "type" : "string"
+        },
+        "GENERIC26" : {
+          "type" : "string"
+        },
+        "GENERIC27" : {
+          "type" : "string"
+        },
+        "GENERIC28" : {
+          "type" : "string"
+        },
+        "GENERIC29" : {
+          "type" : "string"
+        },
+        "GENERIC30" : {
+          "type" : "string"
+        },
+        "GENERIC31" : {
+          "type" : "string"
+        },
+        "GENERIC32" : {
+          "type" : "string"
+        },
+        "GENERIC33" : {
+          "type" : "string"
+        },
+        "GENERIC34" : {
+          "type" : "string"
+        },
+        "GENERIC35" : {
+          "type" : "string"
+        },
+        "GENERIC36" : {
+          "type" : "string"
+        },
+        "GENERIC37" : {
+          "type" : "string"
+        },
+        "GENERIC38" : {
+          "type" : "string"
+        },
+        "GENERIC39" : {
+          "type" : "string"
+        },
+        "GENERIC40" : {
+          "type" : "string"
+        },
+        "EXTCUSTOM1" : {
+          "type" : "string"
+        },
+        "EXTCUSTOM2" : {
+          "type" : "string"
+        },
+        "EXTCUSTOM3" : {
+          "type" : "string"
+        },
+        "EXTCUSTOM4" : {
+          "type" : "string"
+        },
+        "EXTCUSTOM5" : {
+          "type" : "string"
+        },
+        "EXTCUSTOMAMT1" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "EXTCUSTOMAMT2" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "EXTCUSTOMAMT3" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "EXTCUSTOMAMT4" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "EXTCUSTOMAMT5" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "STATUS" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "STATUSDATE" : {
+          "type" : "string",
+          "format" : "date-time"
+        },
+        "FULLYAWARDED" : {
+          "type" : "string"
+        },
+        "PAPERREQRECEIVED" : {
+          "type" : "string",
+          "format" : "date-time"
+        },
+        "REQDOCSAPPROVEDATE" : {
+          "type" : "string",
+          "format" : "date-time"
+        },
+        "PENDINGDATE" : {
+          "type" : "string",
+          "format" : "date-time"
+        },
+        "APPROVEDDATE" : {
+          "type" : "string",
+          "format" : "date-time"
+        },
+        "RELEASEDDATE" : {
+          "type" : "string",
+          "format" : "date-time"
+        },
+        "CANCELEDDATE" : {
+          "type" : "string",
+          "format" : "date-time"
+        },
+        "CLOSEDDATE" : {
+          "type" : "string",
+          "format" : "date-time"
+        },
+        "BUYERASSIGNDATE" : {
+          "type" : "string",
+          "format" : "date-time"
+        },
+        "SITEID" : {
+          "type" : "string"
+        },
+        "FAA_PRE_UPIID" : {
+          "type" : "string"
+        },
+        "SITEDESCR" : {
+          "type" : "string"
+        },
+        "REQUESTOR" : {
+          "type" : "string"
+        },
+        "REQUESTOR_PHONE" : {
+          "type" : "string"
+        },
+        "OWNER_USERID" : {
+          "type" : "string"
+        },
+        "OWNER_FIRSTNAME" : {
+          "type" : "string"
+        },
+        "OWNER_LASTNAME" : {
+          "type" : "string"
+        },
+        "OWNER_EMAIL" : {
+          "type" : "string"
+        },
+        "REQUISITIONER_USERID" : {
+          "type" : "string"
+        },
+        "REQUISITIONER_FIRSTNAME" : {
+          "type" : "string"
+        },
+        "REQUISITIONER_LASTNAME" : {
+          "type" : "string"
+        },
+        "REQUISITIONER_EMAIL" : {
+          "type" : "string"
+        },
+        "BUYER_USERID" : {
+          "type" : "string"
+        },
+        "BUYER_FIRSTNAME" : {
+          "type" : "string"
+        },
+        "BUYER_LASTNAME" : {
+          "type" : "string"
+        },
+        "BUYER_EMAIL" : {
+          "type" : "string"
+        },
+        "TPOC_USERID" : {
+          "type" : "string"
+        },
+        "TPOC_FIRSTNAME" : {
+          "type" : "string"
+        },
+        "TPOC_LASTNAME" : {
+          "type" : "string"
+        },
+        "TPOC_EMAIL" : {
+          "type" : "string"
+        },
+        "ORIGOFFICEADDR_CODE" : {
+          "type" : "string"
+        },
+        "ORIGOFFICEADDR_NAME" : {
+          "type" : "string"
+        },
+        "ORIGOFFICEADDR_ADDRESS1" : {
+          "type" : "string"
+        },
+        "ORIGOFFICEADDR_ADDRESS2" : {
+          "type" : "string"
+        },
+        "ORIGOFFICEADDR_ADDRESS3" : {
+          "type" : "string"
+        },
+        "ORIGOFFICEADDR_ADDRESS4" : {
+          "type" : "string"
+        },
+        "ORIGOFFICEADDR_CITY" : {
+          "type" : "string"
+        },
+        "ORIGOFFICEADDR_STATE" : {
+          "type" : "string"
+        },
+        "ORIGOFFICEADDR_ZIP" : {
+          "type" : "string"
+        },
+        "ORIGOFFICEADDR_COUNTRY" : {
+          "type" : "string"
+        },
+        "ORIGOFFICEADDR_PHONE" : {
+          "type" : "string"
+        },
+        "ORIGOFFICEADDR_FAX" : {
+          "type" : "string"
+        },
+        "ORIGOFFICEADDR_EMAIL" : {
+          "type" : "string"
+        },
+        "ORIGOFFICEADDR_REGIONCODE" : {
+          "type" : "string"
+        },
+        "ORIGOFFICEADDR_PROVINCE" : {
+          "type" : "string"
+        },
+        "ORIGOFFICEADDR_COUNTY" : {
+          "type" : "string"
+        },
+        "ORIGOFFICEADDR_CUSTOM1" : {
+          "type" : "string"
+        },
+        "ORIGOFFICEADDR_CUSTOM2" : {
+          "type" : "string"
+        },
+        "ORIGOFFICEADDR_CUSTOM3" : {
+          "type" : "string"
+        },
+        "ORIGOFFICEADDR_CUSTOM4" : {
+          "type" : "string"
+        },
+        "ORIGOFFICEADDR_CUSTOM5" : {
+          "type" : "string"
+        },
+        "ISSUINGADDR_CODE" : {
+          "type" : "string"
+        },
+        "ISSUINGADDR_NAME" : {
+          "type" : "string"
+        },
+        "ISSUINGADDR_ADDRESS1" : {
+          "type" : "string"
+        },
+        "ISSUINGADDR_ADDRESS2" : {
+          "type" : "string"
+        },
+        "ISSUINGADDR_ADDRESS3" : {
+          "type" : "string"
+        },
+        "ISSUINGADDR_ADDRESS4" : {
+          "type" : "string"
+        },
+        "ISSUINGADDR_CITY" : {
+          "type" : "string"
+        },
+        "ISSUINGADDR_STATE" : {
+          "type" : "string"
+        },
+        "ISSUINGADDR_ZIP" : {
+          "type" : "string"
+        },
+        "ISSUINGADDR_COUNTRY" : {
+          "type" : "string"
+        },
+        "ISSUINGADDR_PHONE" : {
+          "type" : "string"
+        },
+        "ISSUINGADDR_FAX" : {
+          "type" : "string"
+        },
+        "ISSUINGADDR_EMAIL" : {
+          "type" : "string"
+        },
+        "ISSUINGADDR_REGIONCODE" : {
+          "type" : "string"
+        },
+        "ISSUINGADDR_PROVINCE" : {
+          "type" : "string"
+        },
+        "ISSUINGADDR_COUNTY" : {
+          "type" : "string"
+        },
+        "ISSUINGADDR_CUSTOM1" : {
+          "type" : "string"
+        },
+        "ISSUINGADDR_CUSTOM2" : {
+          "type" : "string"
+        },
+        "ISSUINGADDR_CUSTOM3" : {
+          "type" : "string"
+        },
+        "ISSUINGADDR_CUSTOM4" : {
+          "type" : "string"
+        },
+        "ISSUINGADDR_CUSTOM5" : {
+          "type" : "string"
+        },
+        "ADMINADDR_CODE" : {
+          "type" : "string"
+        },
+        "ADMINADDR_NAME" : {
+          "type" : "string"
+        },
+        "ADMINADDR_ADDRESS1" : {
+          "type" : "string"
+        },
+        "ADMINADDR_ADDRESS2" : {
+          "type" : "string"
+        },
+        "ADMINADDR_ADDRESS3" : {
+          "type" : "string"
+        },
+        "ADMINADDR_ADDRESS4" : {
+          "type" : "string"
+        },
+        "ADMINADDR_CITY" : {
+          "type" : "string"
+        },
+        "ADMINADDR_STATE" : {
+          "type" : "string"
+        },
+        "ADMINADDR_ZIP" : {
+          "type" : "string"
+        },
+        "ADMINADDR_COUNTRY" : {
+          "type" : "string"
+        },
+        "ADMINADDR_PHONE" : {
+          "type" : "string"
+        },
+        "ADMINADDR_FAX" : {
+          "type" : "string"
+        },
+        "ADMINADDR_EMAIL" : {
+          "type" : "string"
+        },
+        "ADMINADDR_REGIONCODE" : {
+          "type" : "string"
+        },
+        "ADMINADDR_PROVINCE" : {
+          "type" : "string"
+        },
+        "ADMINADDR_COUNTY" : {
+          "type" : "string"
+        },
+        "ADMINADDR_CUSTOM1" : {
+          "type" : "string"
+        },
+        "ADMINADDR_CUSTOM2" : {
+          "type" : "string"
+        },
+        "ADMINADDR_CUSTOM3" : {
+          "type" : "string"
+        },
+        "ADMINADDR_CUSTOM4" : {
+          "type" : "string"
+        },
+        "ADMINADDR_CUSTOM5" : {
+          "type" : "string"
+        },
+        "PAYMENTADDR_CODE" : {
+          "type" : "string"
+        },
+        "PAYMENTADDR_NAME" : {
+          "type" : "string"
+        },
+        "PAYMENTADDR_ADDRESS1" : {
+          "type" : "string"
+        },
+        "PAYMENTADDR_ADDRESS2" : {
+          "type" : "string"
+        },
+        "PAYMENTADDR_ADDRESS3" : {
+          "type" : "string"
+        },
+        "PAYMENTADDR_ADDRESS4" : {
+          "type" : "string"
+        },
+        "PAYMENTADDR_CITY" : {
+          "type" : "string"
+        },
+        "PAYMENTADDR_STATE" : {
+          "type" : "string"
+        },
+        "PAYMENTADDR_ZIP" : {
+          "type" : "string"
+        },
+        "PAYMENTADDR_COUNTRY" : {
+          "type" : "string"
+        },
+        "PAYMENTADDR_PHONE" : {
+          "type" : "string"
+        },
+        "PAYMENTADDR_FAX" : {
+          "type" : "string"
+        },
+        "PAYMENTADDR_EMAIL" : {
+          "type" : "string"
+        },
+        "PAYMENTADDR_REGIONCODE" : {
+          "type" : "string"
+        },
+        "PAYMENTADDR_PROVINCE" : {
+          "type" : "string"
+        },
+        "PAYMENTADDR_COUNTY" : {
+          "type" : "string"
+        },
+        "PAYMENTADDR_CUSTOM1" : {
+          "type" : "string"
+        },
+        "PAYMENTADDR_CUSTOM2" : {
+          "type" : "string"
+        },
+        "PAYMENTADDR_CUSTOM3" : {
+          "type" : "string"
+        },
+        "PAYMENTADDR_CUSTOM4" : {
+          "type" : "string"
+        },
+        "PAYMENTADDR_CUSTOM5" : {
+          "type" : "string"
+        },
+        "TRANSACTIONINDICATOR" : {
+          "type" : "string"
+        },
+        "APPROVALHISTORY" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/OutboundInterfaces.Models.APPROVALHISTORY"
+          }
+        },
+        "REQUISITIONLINE" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/OutboundInterfaces.Models.REQUISITIONLINE"
+          }
+        }
+      }
+    },
+    "OutboundInterfaces.Models.SYSTEMACCESS" : {
+      "type" : "object",
+      "properties" : {
+        "SYSTEMID" : {
+          "type" : "string"
+        },
+        "SYSTEMPASSWORD" : {
+          "type" : "string"
+        },
+        "APPLICATIONID" : {
+          "type" : "string"
+        },
+        "APPLICATIONPASSWORD" : {
+          "type" : "string"
+        },
+        "USERID" : {
+          "type" : "string"
+        },
+        "USERPASSWORD" : {
+          "type" : "string"
+        }
+      }
+    },
+    "OutboundInterfaces.Models.APPROVALHISTORY" : {
+      "type" : "object",
+      "properties" : {
+        "APPR_SEQNUM" : {
+          "type" : "string"
+        },
+        "APPR_USERID" : {
+          "type" : "string"
+        },
+        "APPR_FIRSTNAME" : {
+          "type" : "string"
+        },
+        "APPR_LASTNAME" : {
+          "type" : "string"
+        },
+        "APPR_EMAIL" : {
+          "type" : "string"
+        },
+        "APPR_ROUTEROLE" : {
+          "type" : "string"
+        },
+        "APPR_APPROVEDATE" : {
+          "type" : "string",
+          "format" : "date-time"
+        },
+        "APPR_COMMENTS" : {
+          "type" : "string"
+        }
+      }
+    },
+    "OutboundInterfaces.Models.REQUISITIONLINE" : {
+      "type" : "object",
+      "properties" : {
+        "ADDEDITCANCEL" : {
+          "type" : "string"
+        },
+        "ITEMNUM" : {
+          "type" : "string"
+        },
+        "SEQNUM" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "SUBNUM" : {
+          "type" : "string"
+        },
+        "DESCR" : {
+          "type" : "string"
+        },
+        "INTERNALNOTETEXT" : {
+          "type" : "string"
+        },
+        "HEADERTEXT" : {
+          "type" : "string"
+        },
+        "FOOTERTEXT" : {
+          "type" : "string"
+        },
+        "INSPTEXT" : {
+          "type" : "string"
+        },
+        "NOTETOBUYERTEXT" : {
+          "type" : "string"
+        },
+        "QUALIFIER" : {
+          "type" : "string"
+        },
+        "QUANTITY" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "UNIT" : {
+          "type" : "string"
+        },
+        "UNITPRICE" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "AMOUNT" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "COMMITTEDAMT" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "TOTALCOMMITTEDAMT" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "REMAININGCOMMITTEDAMT" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "OPTIONLI" : {
+          "type" : "string"
+        },
+        "OPTIONANTICEXERDATE" : {
+          "type" : "string",
+          "format" : "date-time"
+        },
+        "OPTIONDAYS" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "OPTIONEXERCISEDATE" : {
+          "type" : "string",
+          "format" : "date-time"
+        },
+        "POP_STARTDATE" : {
+          "type" : "string",
+          "format" : "date-time"
+        },
+        "POP_ENDDATE" : {
+          "type" : "string",
+          "format" : "date-time"
+        },
+        "PRODCODE" : {
+          "type" : "string"
+        },
+        "USERPRODUCTCODE" : {
+          "type" : "string"
+        },
+        "USERPRODUCTCODEDESCR" : {
+          "type" : "string"
+        },
+        "PROJECTID" : {
+          "type" : "string"
+        },
+        "PROJECTTITLE" : {
+          "type" : "string"
+        },
+        "GFE" : {
+          "type" : "string"
+        },
+        "PRIORITY" : {
+          "type" : "string"
+        },
+        "SPECHANDLING" : {
+          "type" : "string"
+        },
+        "ACCOUNTABLEPROPERTY" : {
+          "type" : "string"
+        },
+        "RENEWALDATE" : {
+          "type" : "string",
+          "format" : "date-time"
+        },
+        "USSGLTRANSCODE" : {
+          "type" : "string"
+        },
+        "SECURITYCLASSIFICATIONCODE" : {
+          "type" : "string"
+        },
+        "FOB" : {
+          "type" : "string"
+        },
+        "ORIGINCITY" : {
+          "type" : "string"
+        },
+        "ORIGINSTATE" : {
+          "type" : "string"
+        },
+        "GENERIC1" : {
+          "type" : "string"
+        },
+        "GENERIC2" : {
+          "type" : "string"
+        },
+        "GENERIC3" : {
+          "type" : "string"
+        },
+        "GENERIC4" : {
+          "type" : "string"
+        },
+        "GENERIC5" : {
+          "type" : "string"
+        },
+        "GENERIC6" : {
+          "type" : "string"
+        },
+        "GENERIC7" : {
+          "type" : "string"
+        },
+        "GENERIC8" : {
+          "type" : "string"
+        },
+        "GENERIC9" : {
+          "type" : "string"
+        },
+        "GENERIC10" : {
+          "type" : "string"
+        },
+        "GENERIC11" : {
+          "type" : "string"
+        },
+        "GENERIC12" : {
+          "type" : "string"
+        },
+        "GENERIC13" : {
+          "type" : "string"
+        },
+        "GENERIC14" : {
+          "type" : "string"
+        },
+        "GENERIC15" : {
+          "type" : "string"
+        },
+        "GENERIC16" : {
+          "type" : "string"
+        },
+        "GENERIC17" : {
+          "type" : "string"
+        },
+        "GENERIC18" : {
+          "type" : "string"
+        },
+        "GENERIC19" : {
+          "type" : "string"
+        },
+        "GENERIC20" : {
+          "type" : "string"
+        },
+        "GENERIC21" : {
+          "type" : "string"
+        },
+        "GENERIC22" : {
+          "type" : "string"
+        },
+        "GENERIC23" : {
+          "type" : "string"
+        },
+        "GENERIC24" : {
+          "type" : "string"
+        },
+        "GENERIC25" : {
+          "type" : "string"
+        },
+        "GENERIC26" : {
+          "type" : "string"
+        },
+        "GENERIC27" : {
+          "type" : "string"
+        },
+        "GENERIC28" : {
+          "type" : "string"
+        },
+        "GENERIC29" : {
+          "type" : "string"
+        },
+        "GENERIC30" : {
+          "type" : "string"
+        },
+        "GENERIC31" : {
+          "type" : "string"
+        },
+        "GENERIC32" : {
+          "type" : "string"
+        },
+        "GENERIC33" : {
+          "type" : "string"
+        },
+        "GENERIC34" : {
+          "type" : "string"
+        },
+        "GENERIC35" : {
+          "type" : "string"
+        },
+        "GENERIC36" : {
+          "type" : "string"
+        },
+        "GENERIC37" : {
+          "type" : "string"
+        },
+        "GENERIC38" : {
+          "type" : "string"
+        },
+        "GENERIC39" : {
+          "type" : "string"
+        },
+        "GENERIC40" : {
+          "type" : "string"
+        },
+        "EXTCUSTOM1" : {
+          "type" : "string"
+        },
+        "EXTCUSTOM2" : {
+          "type" : "string"
+        },
+        "EXTCUSTOM3" : {
+          "type" : "string"
+        },
+        "EXTCUSTOM4" : {
+          "type" : "string"
+        },
+        "EXTCUSTOM5" : {
+          "type" : "string"
+        },
+        "EXTCUSTOMAMT1" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "EXTCUSTOMAMT2" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "EXTCUSTOMAMT3" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "EXTCUSTOMAMT4" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "EXTCUSTOMAMT5" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "STATUS" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "STATUSDATE" : {
+          "type" : "string",
+          "format" : "date-time"
+        },
+        "FULLYAWARDED" : {
+          "type" : "string"
+        },
+        "SHIPMENT" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/OutboundInterfaces.Models.SHIPMENT"
+          }
+        }
+      }
+    },
+    "OutboundInterfaces.Models.SHIPMENT" : {
+      "type" : "object",
+      "properties" : {
+        "SHIPTOSEQNUM" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "SHIPTOADDR_CODE" : {
+          "type" : "string"
+        },
+        "SHIPTOADDR_NAME" : {
+          "type" : "string"
+        },
+        "SHIPTOADDR_ADDRESS1" : {
+          "type" : "string"
+        },
+        "SHIPTOADDR_ADDRESS2" : {
+          "type" : "string"
+        },
+        "SHIPTOADDR_ADDRESS3" : {
+          "type" : "string"
+        },
+        "SHIPTOADDR_ADDRESS4" : {
+          "type" : "string"
+        },
+        "SHIPTOADDR_CITY" : {
+          "type" : "string"
+        },
+        "SHIPTOADDR_STATE" : {
+          "type" : "string"
+        },
+        "SHIPTOADDR_ZIP" : {
+          "type" : "string"
+        },
+        "SHIPTOADDR_COUNTRY" : {
+          "type" : "string"
+        },
+        "SHIPTOADDR_PHONE" : {
+          "type" : "string"
+        },
+        "SHIPTOADDR_FAX" : {
+          "type" : "string"
+        },
+        "SHIPTOADDR_EMAIL" : {
+          "type" : "string"
+        },
+        "SHIPTOADDR_REGIONCODE" : {
+          "type" : "string"
+        },
+        "SHIPTOADDR_PROVINCE" : {
+          "type" : "string"
+        },
+        "SHIPTOADDR_COUNTY" : {
+          "type" : "string"
+        },
+        "SHIPTOADDR_CUSTOM1" : {
+          "type" : "string"
+        },
+        "SHIPTOADDR_CUSTOM2" : {
+          "type" : "string"
+        },
+        "SHIPTOADDR_CUSTOM3" : {
+          "type" : "string"
+        },
+        "SHIPTOADDR_CUSTOM4" : {
+          "type" : "string"
+        },
+        "SHIPTOADDR_CUSTOM5" : {
+          "type" : "string"
+        },
+        "MARKFORADDR_CODE" : {
+          "type" : "string"
+        },
+        "MARKFORADDR_NAME" : {
+          "type" : "string"
+        },
+        "MARKFORADDR_ADDRESS1" : {
+          "type" : "string"
+        },
+        "MARKFORADDR_ADDRESS2" : {
+          "type" : "string"
+        },
+        "MARKFORADDR_ADDRESS3" : {
+          "type" : "string"
+        },
+        "MARKFORADDR_ADDRESS4" : {
+          "type" : "string"
+        },
+        "MARKFORADDR_CITY" : {
+          "type" : "string"
+        },
+        "MARKFORADDR_STATE" : {
+          "type" : "string"
+        },
+        "MARKFORADDR_ZIP" : {
+          "type" : "string"
+        },
+        "MARKFORADDR_COUNTRY" : {
+          "type" : "string"
+        },
+        "MARKFORADDR_PHONE" : {
+          "type" : "string"
+        },
+        "MARKFORADDR_FAX" : {
+          "type" : "string"
+        },
+        "MARKFORADDR_EMAIL" : {
+          "type" : "string"
+        },
+        "MARKFORADDR_REGIONCODE" : {
+          "type" : "string"
+        },
+        "MARKFORADDR_PROVINCE" : {
+          "type" : "string"
+        },
+        "MARKFORADDR_COUNTY" : {
+          "type" : "string"
+        },
+        "MARKFORADDR_CUSTOM1" : {
+          "type" : "string"
+        },
+        "MARKFORADDR_CUSTOM2" : {
+          "type" : "string"
+        },
+        "MARKFORADDR_CUSTOM3" : {
+          "type" : "string"
+        },
+        "MARKFORADDR_CUSTOM4" : {
+          "type" : "string"
+        },
+        "MARKFORADDR_CUSTOM5" : {
+          "type" : "string"
+        },
+        "QUANTITY" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "AMOUNT" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "DELIVERYDATE" : {
+          "type" : "string",
+          "format" : "date-time"
+        },
+        "DELIVERYDAYSAFTERAWARD" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "DAYSAFTERTYPE" : {
+          "type" : "string"
+        },
+        "TANKSIZE" : {
+          "type" : "string"
+        },
+        "TANKDESC" : {
+          "type" : "string"
+        },
+        "ACCOUNT" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/OutboundInterfaces.Models.ACCOUNT"
+          }
+        }
+      }
+    },
+    "OutboundInterfaces.Models.ACCOUNT" : {
+      "type" : "object",
+      "properties" : {
+        "ACCTSEQNUM" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "FINCHANGETYPE" : {
+          "type" : "string"
+        },
+        "ACCOUNTCODE" : {
+          "type" : "string"
+        },
+        "ACCTFIELD1" : {
+          "type" : "string"
+        },
+        "ACCTFIELD2" : {
+          "type" : "string"
+        },
+        "ACCTFIELD3" : {
+          "type" : "string"
+        },
+        "ACCTFIELD4" : {
+          "type" : "string"
+        },
+        "ACCTFIELD5" : {
+          "type" : "string"
+        },
+        "ACCTFIELD6" : {
+          "type" : "string"
+        },
+        "ACCTFIELD7" : {
+          "type" : "string"
+        },
+        "ACCTFIELD8" : {
+          "type" : "string"
+        },
+        "ACCTFIELD9" : {
+          "type" : "string"
+        },
+        "ACCTFIELD10" : {
+          "type" : "string"
+        },
+        "ACCTFIELD11" : {
+          "type" : "string"
+        },
+        "ACCTFIELD12" : {
+          "type" : "string"
+        },
+        "ACCTFIELD13" : {
+          "type" : "string"
+        },
+        "ACCTFIELD14" : {
+          "type" : "string"
+        },
+        "ACCTFIELD15" : {
+          "type" : "string"
+        },
+        "ACCTFIELD16" : {
+          "type" : "string"
+        },
+        "ACCTFIELD17" : {
+          "type" : "string"
+        },
+        "ACCTFIELD18" : {
+          "type" : "string"
+        },
+        "ACCTFIELD19" : {
+          "type" : "string"
+        },
+        "ACCTFIELD20" : {
+          "type" : "string"
+        },
+        "ACCTFIELD21" : {
+          "type" : "string"
+        },
+        "ACCTFIELD22" : {
+          "type" : "string"
+        },
+        "ACCTFIELD23" : {
+          "type" : "string"
+        },
+        "ACCTFIELD24" : {
+          "type" : "string"
+        },
+        "ACCTFIELD25" : {
+          "type" : "string"
+        },
+        "ACCTFIELD26" : {
+          "type" : "string"
+        },
+        "ACCTFIELD27" : {
+          "type" : "string"
+        },
+        "ACCTFIELD28" : {
+          "type" : "string"
+        },
+        "ACCTFIELD29" : {
+          "type" : "string"
+        },
+        "ACCTFIELD30" : {
+          "type" : "string"
+        },
+        "FUNDSTYPE" : {
+          "type" : "string"
+        },
+        "INCLUDESRECOVERYACTFUNDS" : {
+          "type" : "string"
+        },
+        "TASSEG1" : {
+          "type" : "string"
+        },
+        "TASSEG2" : {
+          "type" : "string"
+        },
+        "TASSEG3" : {
+          "type" : "string"
+        },
+        "TAS" : {
+          "type" : "string"
+        },
+        "QUANTITY" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "AMOUNT" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "AMT" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "TOTALAMT" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "REMAININGAMT" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "SUBJECTTOFUNDING" : {
+          "type" : "string"
+        },
+        "PROJECTNUM" : {
+          "type" : "string"
+        },
+        "TASKNUM" : {
+          "type" : "string"
+        },
+        "EXPENDITUREORG" : {
+          "type" : "string"
+        },
+        "EXPENDITUREDATE" : {
+          "type" : "string",
+          "format" : "date-time"
+        },
+        "EXPENDITURETYPE" : {
+          "type" : "string"
+        },
+        "FUNDOVERRIDE" : {
+          "type" : "string"
+        },
+        "BLIPROGRAMELEMENT" : {
+          "type" : "string"
+        },
+        "EXTCUSTOM1" : {
+          "type" : "string"
+        },
+        "EXTCUSTOM2" : {
+          "type" : "string"
+        },
+        "EXTCUSTOM3" : {
+          "type" : "string"
+        },
+        "EXTCUSTOM4" : {
+          "type" : "string"
+        },
+        "EXTCUSTOM5" : {
+          "type" : "string"
+        },
+        "EXTCUSTOMAMT1" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "EXTCUSTOMAMT2" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "EXTCUSTOMAMT3" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "EXTCUSTOMAMT4" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "EXTCUSTOMAMT5" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "ASSOCIATEDREQUISITIONINFO" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/OutboundInterfaces.Models.ASSOCIATEDREQUISITIONINFO"
+          }
+        }
+      }
+    },
+    "OutboundInterfaces.Models.ASSOCIATEDREQUISITIONINFO" : {
+      "type" : "object",
+      "properties" : {
+        "ASSOCREQNUM" : {
+          "type" : "string"
+        },
+        "ASSOCREQLI" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "ASSOCREQSUBLI" : {
+          "type" : "string"
+        },
+        "ASSOCREQSHIPTOSEQNUM" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "ASSOCREQACCTID" : {
+          "type" : "integer",
+          "format" : "int32"
+        }
+      }
+    }
+  }
+}

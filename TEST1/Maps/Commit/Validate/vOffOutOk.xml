@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root t='190' id='1' V190='11' inStruct='Structures/OFF/Requisition/OFF_Response.xml' outStruct='Structures/PRISM/FRTIB Swagger/paths/api/v1/outbound/req_validation_out/responses/POST_200.xml' inputRep='177' outputRep='177' nextMap='' inputStructUserName='OFF_Response' outputStructUserName='POST_200' V1='4' name='vOffInputMap' incarnation='16634'>
+  <inputMapElem t='200' id='4' V200='8' input='true' structElemExists='true' usedCount='2392' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' modifiedFromParent_null='true' V1='4' name='Root'>
+    <mapNode t='190' idref='1'/>
+    <child t='200' id='1094' V200='8' input='true' structElemExists='true' usedCount='52' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' modifiedFromParent_emit='true' modifiedFromParent_null='true' V1='4' name='OutputParameters'>
+      <mapNode t='190' idref='1'/>
+      <child t='200' id='1095' V200='8' input='true' structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' externalName='@xmlns' V281='13' V1='4' name='_xmlns'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='1096' V200='8' input='true' structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' externalName='@xmlns:xsi' V281='13' V1='4' name='_xmlns:xsi'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='1097' V200='8' input='true' structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='X_SERVICE_ID'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='1098' V200='8' input='true' structElemExists='true' usedCount='5' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='X_RETURN_STATUS'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='1099' V200='8' input='true' structElemExists='true' usedCount='46' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' modifiedFromParent_emit='true' modifiedFromParent_null='true' V1='4' name='X_RETURN_MESSAGES'>
+        <mapNode t='190' idref='1'/>
+        <child t='200' id='1100' V200='8' input='true' structElemExists='true' usedCount='36' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' modifiedFromParent_null='true' V1='4' name='X_RETURN_MESSAGES_ITEM'>
+          <mapNode t='190' idref='1'/>
+          <child t='200' id='1101' V200='8' input='true' structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='SERVICE_ID'>
+            <mapNode t='190' idref='1'/>
+          </child>
+          <child t='200' id='1102' V200='8' input='true' structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='MESSAGE_ID'>
+            <mapNode t='190' idref='1'/>
+          </child>
+          <child t='200' id='1103' V200='8' input='true' structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='TRANSACTION_ID'>
+            <mapNode t='190' idref='1'/>
+          </child>
+          <child t='200' id='1104' V200='8' input='true' structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='BUSINESS_OBJECT_TYPE'>
+            <mapNode t='190' idref='1'/>
+          </child>
+          <child t='200' id='1105' V200='8' input='true' structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='BUSINESS_OBJECT_ID'>
+            <mapNode t='190' idref='1'/>
+          </child>
+          <child t='200' id='1106' V200='8' input='true' structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='ACTION'>
+            <mapNode t='190' idref='1'/>
+          </child>
+          <child t='200' id='1107' V200='8' input='true' structElemExists='true' usedCount='11' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='MESSAGE_TYPE'>
+            <mapNode t='190' idref='1'/>
+          </child>
+          <child t='200' id='1108' V200='8' input='true' structElemExists='true' usedCount='12' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' modifiedFromParent_validate='true' V1='4' name='MESSAGE'>
+            <mapNode t='190' idref='1'/>
+          </child>
+          <child t='200' id='1109' V200='8' input='true' structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='MESSAGE_DATE'>
+            <mapNode t='190' idref='1'/>
+          </child>
+        </child>
+      </child>
+    </child>
+  </inputMapElem>
+  <outputMapElem t='200' id='438' V200='8' structElemExists='true' usedCount='2643' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' inheritsFromCopyRule='20' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/PRISM/FRTIB Swagger/schemas/OutboundInterfaces.Models.OutboundCallResponse.xml' V281='13' modifiedFromParent_loop='true' modifiedFromParent_null='true' V1='4' name='POST_200' description='OK'>
+    <mapNode t='190' idref='1'/>
+    <loop>SimpleLoop(in$/Root,{Filter},{Sort Keys},{Contexts})</loop>
+    <null>IsNull(in$/Root)</null>
+    <child t='200' id='1110' V200='8' structElemExists='true' usedCount='17' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_emit='true' modifiedFromParent_value='true' V1='4' name='success'>
+      <mapNode t='190' idref='1'/>
+      <emit>Not(IsNull(in$/Root/OutputParameters/X_RETURN_MESSAGES))</emit>
+      <value>IfThenElse(IsNull(in$/Root/OutputParameters/X_RETURN_MESSAGES),Constant([value="noerrors",dataType="2"],),IfThenElse(HasValue(in$/Root/OutputParameters/X_RETURN_MESSAGES),Constant([value="errors",dataType="2"],),Constant([value="INVALID",dataType="2"],)))</value>
+    </child>
+    <child t='200' id='1111' V200='8' structElemExists='true' usedCount='35' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' inheritsFromCopyRule='20' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/PRISM/FRTIB Swagger/schemas/OutboundInterfaces.Models.ErrorMessage.xml' V281='13' modifiedFromParent_loop='true' V1='4' name='errormessage'>
+      <mapNode t='190' idref='1'/>
+      <loop>SimpleLoop(in$/Root/OutputParameters/X_RETURN_MESSAGES/X_RETURN_MESSAGES_ITEM,{Filter},{Sort Keys},{Contexts})</loop>
+      <child t='200' id='1112' V200='8' structElemExists='true' usedCount='12' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='ErrorDescription'>
+        <mapNode t='190' idref='1'/>
+        <value>in$/Root/OutputParameters/X_RETURN_MESSAGES/X_RETURN_MESSAGES_ITEM/MESSAGE</value>
+      </child>
+      <child t='200' id='1113' V200='8' structElemExists='true' usedCount='2' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='ErrorCode'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='1114' V200='8' structElemExists='true' usedCount='12' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='ErrorType'>
+        <mapNode t='190' idref='1'/>
+        <value>in$/Root/OutputParameters/X_RETURN_MESSAGES/X_RETURN_MESSAGES_ITEM/MESSAGE_TYPE</value>
+      </child>
+    </child>
+    <child t='200' id='1115' V200='8' structElemExists='true' usedCount='12' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='resourceid'>
+      <mapNode t='190' idref='1'/>
+      <value>Concat([joinString="-"],GetMapProperty([property="ReqNum"],),GetMapProperty([property="AmendNum"],))</value>
+    </child>
+    <child t='200' id='1116' V200='8' structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='requestjson'>
+      <mapNode t='190' idref='1'/>
+    </child>
+    <child t='200' id='1117' V200='8' structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='responsejson'>
+      <mapNode t='190' idref='1'/>
+    </child>
+    <child t='200' id='1118' V200='8' structElemExists='true' usedCount='3' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' inheritsFromCopyRule='20' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/PRISM/FRTIB Swagger/schemas/OutboundInterfaces.Models.AddtionalInfo.xml' V281='13' modifiedFromParent_emit='true' V1='4' name='addtionalinfo'>
+      <mapNode t='190' idref='1'/>
+      <child t='200' id='1119' V200='8' structElemExists='true' usedCount='2' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='ApprovalStatus'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='1120' V200='8' structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='sourceSystemID'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='1121' V200='8' structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='transactionDate'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='1122' V200='8' structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='SystemAccess_userID'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='1123' V200='8' structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='SystemAccess_password'>
+        <mapNode t='190' idref='1'/>
+      </child>
+    </child>
+  </outputMapElem>
+  <inputRepRuntime t='697' id='1128' V697='1' V690='1' padOutput='true'>
+  </inputRepRuntime>
+  <outputRepRuntime t='697' id='1129' V697='1' V690='1' padOutput='true'>
+  </outputRepRuntime>
+  <valueSets></valueSets>
+  <inputXmlRepRuntime t='692' id='1130' V692='1' V690='1'>
+  </inputXmlRepRuntime>
+  <child t='165' id='2' V1='4' name='Document Bindings'>
+    <child t='166' id='548' V166='5' docType='1' docReposPath='/LOCAL_PROJECT/Sample Data/Maps/Commit/Validate/vOffOutOk_input/OFF_Response.json' V1='4' name='in$/Root'>
+      <elemNode t='200' idref='4'/>
+    </child>
+    <child t='166' id='549' V166='5' docType='2' docReposPath='/FRTIB/Sample Data/OFF/Requisition/OFF Req Validate/OFF Req Validate' V1='4' name='out$/Root'>
+      <elemNode t='200' idref='438'/>
+    </child>
+  </child>
+  <child t='201' id='3' V1='4' name='Inherits From'>
+  </child>
+</root>

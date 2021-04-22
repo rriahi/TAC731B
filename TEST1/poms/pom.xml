@@ -11,6 +11,9 @@
   <modules>
     <module>code/beans</module>
     <module>code/routines</module>
+    <module>jobs/routes/FRTIB/Commit/frtib_commit_0.1</module>
+    <module>jobs/routes/FRTIB/Commit/frtib_commit_0.2</module>
+    <module>jobs/routes/FRTIB/Commit/frtib_commit_0.3</module>
   </modules>
   <properties>
     <signer.version>7.3.1-SNAPSHOT</signer.version>

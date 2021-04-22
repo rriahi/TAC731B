@@ -1,0 +1,174 @@
+{
+  "itemId" : "_3GxjkGAWEeuIg8leX35Yaw",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_wtkTQGyiEeujXNTwweBhqg",
+    "parameterList" : [ {
+      "id" : "_mQWhqp7jEeuzi_gt6-uofA",
+      "name" : "authBase64Pass"
+    }, {
+      "id" : "_mQWho57jEeuzi_gt6-uofA",
+      "name" : "authPass"
+    }, {
+      "id" : "_mQWhop7jEeuzi_gt6-uofA",
+      "name" : "authUser"
+    }, {
+      "id" : "_mQWhpZ7jEeuzi_gt6-uofA",
+      "name" : "offEPCommit"
+    }, {
+      "id" : "_mQWhqZ7jEeuzi_gt6-uofA",
+      "name" : "offRelPathCommit"
+    }, {
+      "id" : "_mQWhqJ7jEeuzi_gt6-uofA",
+      "name" : "org_Id"
+    }, {
+      "id" : "_mQWhpJ7jEeuzi_gt6-uofA",
+      "name" : "prismEPCommit"
+    }, {
+      "id" : "_mQWhp57jEeuzi_gt6-uofA",
+      "name" : "respApplication"
+    }, {
+      "id" : "_mQWhpp7jEeuzi_gt6-uofA",
+      "name" : "responsibility"
+    }, {
+      "id" : "_mQWhoZ7jEeuzi_gt6-uofA",
+      "name" : "talEpCommit"
+    } ]
+  }, {
+    "contextName" : "QA",
+    "repoId" : "_wtkTQGyiEeujXNTwweBhqg",
+    "parameterList" : [ {
+      "id" : "_mQWhy57jEeuzi_gt6-uofA",
+      "name" : "authBase64Pass"
+    }, {
+      "id" : "_mQWhxJ7jEeuzi_gt6-uofA",
+      "name" : "authPass"
+    }, {
+      "id" : "_mQWhw57jEeuzi_gt6-uofA",
+      "name" : "authUser"
+    }, {
+      "id" : "_mQWhxp7jEeuzi_gt6-uofA",
+      "name" : "offEPCommit"
+    }, {
+      "id" : "_mQWhyp7jEeuzi_gt6-uofA",
+      "name" : "offRelPathCommit"
+    }, {
+      "id" : "_mQWhyZ7jEeuzi_gt6-uofA",
+      "name" : "org_Id"
+    }, {
+      "id" : "_mQWhxZ7jEeuzi_gt6-uofA",
+      "name" : "prismEPCommit"
+    }, {
+      "id" : "_mQWhyJ7jEeuzi_gt6-uofA",
+      "name" : "respApplication"
+    }, {
+      "id" : "_mQWhx57jEeuzi_gt6-uofA",
+      "name" : "responsibility"
+    }, {
+      "id" : "_mQWhwp7jEeuzi_gt6-uofA",
+      "name" : "talEpCommit"
+    } ]
+  }, {
+    "contextName" : "PROD",
+    "repoId" : "_wtkTQGyiEeujXNTwweBhqg",
+    "parameterList" : [ {
+      "id" : "_mQWhwJ7jEeuzi_gt6-uofA",
+      "name" : "authBase64Pass"
+    }, {
+      "id" : "_mQWhuZ7jEeuzi_gt6-uofA",
+      "name" : "authPass"
+    }, {
+      "id" : "_mQWhuJ7jEeuzi_gt6-uofA",
+      "name" : "authUser"
+    }, {
+      "id" : "_mQWhu57jEeuzi_gt6-uofA",
+      "name" : "offEPCommit"
+    }, {
+      "id" : "_mQWhv57jEeuzi_gt6-uofA",
+      "name" : "offRelPathCommit"
+    }, {
+      "id" : "_mQWhvp7jEeuzi_gt6-uofA",
+      "name" : "org_Id"
+    }, {
+      "id" : "_mQWhup7jEeuzi_gt6-uofA",
+      "name" : "prismEPCommit"
+    }, {
+      "id" : "_mQWhvZ7jEeuzi_gt6-uofA",
+      "name" : "respApplication"
+    }, {
+      "id" : "_mQWhvJ7jEeuzi_gt6-uofA",
+      "name" : "responsibility"
+    }, {
+      "id" : "_mQWht57jEeuzi_gt6-uofA",
+      "name" : "talEpCommit"
+    } ]
+  }, {
+    "contextName" : "UAT",
+    "repoId" : "_wtkTQGyiEeujXNTwweBhqg",
+    "parameterList" : [ {
+      "id" : "_mQWh1p7jEeuzi_gt6-uofA",
+      "name" : "authBase64Pass"
+    }, {
+      "id" : "_mQWhz57jEeuzi_gt6-uofA",
+      "name" : "authPass"
+    }, {
+      "id" : "_mQWhzp7jEeuzi_gt6-uofA",
+      "name" : "authUser"
+    }, {
+      "id" : "_mQWh0Z7jEeuzi_gt6-uofA",
+      "name" : "offEPCommit"
+    }, {
+      "id" : "_mQWh1Z7jEeuzi_gt6-uofA",
+      "name" : "offRelPathCommit"
+    }, {
+      "id" : "_mQWh1J7jEeuzi_gt6-uofA",
+      "name" : "org_Id"
+    }, {
+      "id" : "_mQWh0J7jEeuzi_gt6-uofA",
+      "name" : "prismEPCommit"
+    }, {
+      "id" : "_mQWh057jEeuzi_gt6-uofA",
+      "name" : "respApplication"
+    }, {
+      "id" : "_mQWh0p7jEeuzi_gt6-uofA",
+      "name" : "responsibility"
+    }, {
+      "id" : "_mQWhzZ7jEeuzi_gt6-uofA",
+      "name" : "talEpCommit"
+    } ]
+  }, {
+    "contextName" : "DEV_AWS",
+    "repoId" : "_wtkTQGyiEeujXNTwweBhqg",
+    "parameterList" : [ {
+      "id" : "_mQWhtZ7jEeuzi_gt6-uofA",
+      "name" : "authBase64Pass"
+    }, {
+      "id" : "_mQWhrp7jEeuzi_gt6-uofA",
+      "name" : "authPass"
+    }, {
+      "id" : "_mQWhrZ7jEeuzi_gt6-uofA",
+      "name" : "authUser"
+    }, {
+      "id" : "_mQWhsJ7jEeuzi_gt6-uofA",
+      "name" : "offEPCommit"
+    }, {
+      "id" : "_mQWhtJ7jEeuzi_gt6-uofA",
+      "name" : "offRelPathCommit"
+    }, {
+      "id" : "_mQWhs57jEeuzi_gt6-uofA",
+      "name" : "org_Id"
+    }, {
+      "id" : "_mQWhr57jEeuzi_gt6-uofA",
+      "name" : "prismEPCommit"
+    }, {
+      "id" : "_mQWhsp7jEeuzi_gt6-uofA",
+      "name" : "respApplication"
+    }, {
+      "id" : "_mQWhsZ7jEeuzi_gt6-uofA",
+      "name" : "responsibility"
+    }, {
+      "id" : "_mQWhrJ7jEeuzi_gt6-uofA",
+      "name" : "talEpCommit"
+    } ]
+  } ]
+}

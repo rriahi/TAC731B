@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:version="2.0">
+  <talendfile:ContextType confirmationNeeded="false" name="Default" xmi:id="_mQWhoJ7jEeuzi_gt6-uofA">
+    <contextParameter comment="" name="talEpCommit" prompt="talEpCommit?" promptNeeded="false" type="id_String" value="&quot;http://localhost:8090/services/commitment&quot;" xmi:id="_mQWhoZ7jEeuzi_gt6-uofA"/>
+    <contextParameter comment="username for authentication" name="authUser" prompt="authUser?" promptNeeded="false" type="id_String" value="&quot;ibcprism&quot;" xmi:id="_mQWhop7jEeuzi_gt6-uofA"/>
+    <contextParameter comment="password for authentication" name="authPass" prompt="authPass?" promptNeeded="false" type="id_String" value="&quot;Welcome12345!&quot;" xmi:id="_mQWho57jEeuzi_gt6-uofA"/>
+    <contextParameter comment="PRISM approve req" name="prismEPCommit" prompt="prismEPCommit?" promptNeeded="false" type="id_String" value="&quot;https://doi-ibc-frtibqa.unisonglobal.com/requisition/requisition/requisition.asmx&quot;" xmi:id="_mQWhpJ7jEeuzi_gt6-uofA"/>
+    <contextParameter comment="OFF commit Call" name="offEPCommit" prompt="offEPCommit?" promptNeeded="false" type="id_String" value="&quot;https://offdev3.ibc.doi.gov:443/webservices/rest/xxibc_prism_requisition_service/main/&quot;" xmi:id="_mQWhpZ7jEeuzi_gt6-uofA"/>
+    <contextParameter comment="" name="responsibility" prompt="responsibility?" promptNeeded="false" type="id_String" value="&quot;EEC_PURCHASING_SUPER_USER_&quot;" xmi:id="_mQWhpp7jEeuzi_gt6-uofA"/>
+    <contextParameter comment="" name="respApplication" prompt="respApplication?" promptNeeded="false" type="id_String" value="&quot;PO&quot;" xmi:id="_mQWhp57jEeuzi_gt6-uofA"/>
+    <contextParameter comment="" name="org_Id" prompt="org_Id?" promptNeeded="false" type="id_String" value="&quot;794&quot;" xmi:id="_mQWhqJ7jEeuzi_gt6-uofA"/>
+    <contextParameter comment="Relative path for OFFs commit endpoint" name="offRelPathCommit" prompt="offRelPathCommit?" promptNeeded="false" type="id_String" value="&quot;/webservices/rest/xxibc_prism_requisition_service/main/&quot;" xmi:id="_mQWhqZ7jEeuzi_gt6-uofA"/>
+    <contextParameter comment="" name="authBase64Pass" prompt="authBase64Pass?" promptNeeded="false" type="id_String" value="&quot;aWJjcHJpc206V2VsY29tZTEyMzQ1IQ==&quot;" xmi:id="_mQWhqp7jEeuzi_gt6-uofA"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="DEV_AWS" xmi:id="_mQWhq57jEeuzi_gt6-uofA">
+    <contextParameter comment="" name="talEpCommit" prompt="talEpCommit?" promptNeeded="false" type="id_String" value="&quot;/commitment&quot;" xmi:id="_mQWhrJ7jEeuzi_gt6-uofA"/>
+    <contextParameter comment="username for authentication" name="authUser" prompt="authUser?" promptNeeded="false" type="id_String" value="&quot;ibcprism&quot;" xmi:id="_mQWhrZ7jEeuzi_gt6-uofA"/>
+    <contextParameter comment="password for authentication" name="authPass" prompt="authPass?" promptNeeded="false" type="id_String" value="&quot;Welcome12345!&quot;" xmi:id="_mQWhrp7jEeuzi_gt6-uofA"/>
+    <contextParameter comment="PRISM approve req" name="prismEPCommit" prompt="prismEPCommit?" promptNeeded="false" type="id_String" value="&quot;https://doi-ibc-frtibqa.unisonglobal.com/requisition/requisition/requisition.asmx&quot;" xmi:id="_mQWhr57jEeuzi_gt6-uofA"/>
+    <contextParameter comment="OFF commit Call" name="offEPCommit" prompt="offEPCommit?" promptNeeded="false" type="id_String" value="&quot;https://offdev3.ibc.doi.gov:443/webservices/rest/xxibc_prism_requisition_service/main/&quot;" xmi:id="_mQWhsJ7jEeuzi_gt6-uofA"/>
+    <contextParameter comment="" name="responsibility" prompt="responsibility?" promptNeeded="false" type="id_String" value="&quot;EEC_PURCHASING_SUPER_USER_&quot;" xmi:id="_mQWhsZ7jEeuzi_gt6-uofA"/>
+    <contextParameter comment="" name="respApplication" prompt="respApplication?" promptNeeded="false" type="id_String" value="&quot;PO&quot;" xmi:id="_mQWhsp7jEeuzi_gt6-uofA"/>
+    <contextParameter comment="" name="org_Id" prompt="org_Id?" promptNeeded="false" type="id_String" value="&quot;794&quot;" xmi:id="_mQWhs57jEeuzi_gt6-uofA"/>
+    <contextParameter comment="Relative path for OFFs commit endpoint" name="offRelPathCommit" prompt="offRelPathCommit?" promptNeeded="false" type="id_String" value="&quot;/webservices/rest/xxibc_prism_requisition_service/main/&quot;" xmi:id="_mQWhtJ7jEeuzi_gt6-uofA"/>
+    <contextParameter comment="" name="authBase64Pass" prompt="authBase64Pass?" promptNeeded="false" type="id_String" value="&quot;aWJjcHJpc206V2VsY29tZTEyMzQ1IQ==&quot;" xmi:id="_mQWhtZ7jEeuzi_gt6-uofA"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="PROD" xmi:id="_mQWhtp7jEeuzi_gt6-uofA">
+    <contextParameter comment="" name="talEpCommit" prompt="talEpCommit?" promptNeeded="false" type="id_String" value="&quot;/commitment&quot;" xmi:id="_mQWht57jEeuzi_gt6-uofA"/>
+    <contextParameter comment="username for authentication" name="authUser" prompt="authUser?" promptNeeded="false" type="id_String" value="&quot;ibcprism&quot;" xmi:id="_mQWhuJ7jEeuzi_gt6-uofA"/>
+    <contextParameter comment="password for authentication" name="authPass" prompt="authPass?" promptNeeded="false" type="id_String" value="" xmi:id="_mQWhuZ7jEeuzi_gt6-uofA"/>
+    <contextParameter comment="PRISM approve req" name="prismEPCommit" prompt="prismEPCommit?" promptNeeded="false" type="id_String" value="https://doi-ibc-frtib.unisonglobal.com/prism" xmi:id="_mQWhup7jEeuzi_gt6-uofA"/>
+    <contextParameter comment="OFF commit Call" name="offEPCommit" prompt="offEPCommit?" promptNeeded="false" type="id_String" value="" xmi:id="_mQWhu57jEeuzi_gt6-uofA"/>
+    <contextParameter comment="" name="responsibility" prompt="responsibility?" promptNeeded="false" type="id_String" value="" xmi:id="_mQWhvJ7jEeuzi_gt6-uofA"/>
+    <contextParameter comment="" name="respApplication" prompt="respApplication?" promptNeeded="false" type="id_String" value="" xmi:id="_mQWhvZ7jEeuzi_gt6-uofA"/>
+    <contextParameter comment="" name="org_Id" prompt="org_Id?" promptNeeded="false" type="id_String" value="" xmi:id="_mQWhvp7jEeuzi_gt6-uofA"/>
+    <contextParameter comment="Relative path for OFFs commit endpoint" name="offRelPathCommit" prompt="offRelPathCommit?" promptNeeded="false" type="id_String" value="" xmi:id="_mQWhv57jEeuzi_gt6-uofA"/>
+    <contextParameter comment="" name="authBase64Pass" prompt="authBase64Pass?" promptNeeded="false" type="id_String" value="" xmi:id="_mQWhwJ7jEeuzi_gt6-uofA"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="QA" xmi:id="_mQWhwZ7jEeuzi_gt6-uofA">
+    <contextParameter comment="" name="talEpCommit" prompt="talEpCommit?" promptNeeded="false" type="id_String" value="&quot;/commitment&quot;" xmi:id="_mQWhwp7jEeuzi_gt6-uofA"/>
+    <contextParameter comment="username for authentication" name="authUser" prompt="authUser?" promptNeeded="false" type="id_String" value="&quot;ibcprism&quot;" xmi:id="_mQWhw57jEeuzi_gt6-uofA"/>
+    <contextParameter comment="password for authentication" name="authPass" prompt="authPass?" promptNeeded="false" type="id_String" value="&quot;Welcome12345!&quot;" xmi:id="_mQWhxJ7jEeuzi_gt6-uofA"/>
+    <contextParameter comment="PRISM approve req" name="prismEPCommit" prompt="prismEPCommit?" promptNeeded="false" type="id_String" value="&quot;https://doi-ibc-frtibqa.unisonglobal.com/requisition/requisition/requisition.asmx&quot;" xmi:id="_mQWhxZ7jEeuzi_gt6-uofA"/>
+    <contextParameter comment="OFF commit Call" name="offEPCommit" prompt="offEPCommit?" promptNeeded="false" type="id_String" value="&quot;https://offdev3.ibc.doi.gov:443/webservices/rest/xxibc_prism_requisition_service/main/&quot;" xmi:id="_mQWhxp7jEeuzi_gt6-uofA"/>
+    <contextParameter comment="" name="responsibility" prompt="responsibility?" promptNeeded="false" type="id_String" value="&quot;EEC_PURCHASING_SUPER_USER_&quot;" xmi:id="_mQWhx57jEeuzi_gt6-uofA"/>
+    <contextParameter comment="" name="respApplication" prompt="respApplication?" promptNeeded="false" type="id_String" value="&quot;PO&quot;" xmi:id="_mQWhyJ7jEeuzi_gt6-uofA"/>
+    <contextParameter comment="" name="org_Id" prompt="org_Id?" promptNeeded="false" type="id_String" value="&quot;794&quot;" xmi:id="_mQWhyZ7jEeuzi_gt6-uofA"/>
+    <contextParameter comment="Relative path for OFFs commit endpoint" name="offRelPathCommit" prompt="offRelPathCommit?" promptNeeded="false" type="id_String" value="&quot;/webservices/rest/xxibc_prism_requisition_service/main/&quot;" xmi:id="_mQWhyp7jEeuzi_gt6-uofA"/>
+    <contextParameter comment="" name="authBase64Pass" prompt="authBase64Pass?" promptNeeded="false" type="id_String" value="&quot;aWJjcHJpc206V2VsY29tZTEyMzQ1IQ==&quot;" xmi:id="_mQWhy57jEeuzi_gt6-uofA"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="UAT" xmi:id="_mQWhzJ7jEeuzi_gt6-uofA">
+    <contextParameter comment="" name="talEpCommit" prompt="talEpCommit?" promptNeeded="false" type="id_String" value="&quot;/commitment&quot;" xmi:id="_mQWhzZ7jEeuzi_gt6-uofA"/>
+    <contextParameter comment="username for authentication" name="authUser" prompt="authUser?" promptNeeded="false" type="id_String" value="&quot;ibcprism&quot;" xmi:id="_mQWhzp7jEeuzi_gt6-uofA"/>
+    <contextParameter comment="password for authentication" name="authPass" prompt="authPass?" promptNeeded="false" type="id_String" value="" xmi:id="_mQWhz57jEeuzi_gt6-uofA"/>
+    <contextParameter comment="PRISM approve req" name="prismEPCommit" prompt="prismEPCommit?" promptNeeded="false" type="id_String" value="" xmi:id="_mQWh0J7jEeuzi_gt6-uofA"/>
+    <contextParameter comment="OFF commit Call" name="offEPCommit" prompt="offEPCommit?" promptNeeded="false" type="id_String" value="" xmi:id="_mQWh0Z7jEeuzi_gt6-uofA"/>
+    <contextParameter comment="" name="responsibility" prompt="responsibility?" promptNeeded="false" type="id_String" value="" xmi:id="_mQWh0p7jEeuzi_gt6-uofA"/>
+    <contextParameter comment="" name="respApplication" prompt="respApplication?" promptNeeded="false" type="id_String" value="" xmi:id="_mQWh057jEeuzi_gt6-uofA"/>
+    <contextParameter comment="" name="org_Id" prompt="org_Id?" promptNeeded="false" type="id_String" value="" xmi:id="_mQWh1J7jEeuzi_gt6-uofA"/>
+    <contextParameter comment="Relative path for OFFs commit endpoint" name="offRelPathCommit" prompt="offRelPathCommit?" promptNeeded="false" type="id_String" value="" xmi:id="_mQWh1Z7jEeuzi_gt6-uofA"/>
+    <contextParameter comment="" name="authBase64Pass" prompt="authBase64Pass?" promptNeeded="false" type="id_String" value="" xmi:id="_mQWh1p7jEeuzi_gt6-uofA"/>
+  </talendfile:ContextType>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_e80d88aa-829a-4e50-bc59-348986daa5bc"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>nOpT8Y4pHItirsVD7QQ8zP64XqsFjboZpRRIi4/49j2sf/NpGgKX6tbNYp3PDQ2/EY7099KysLqV
+3Dy3tMcMWA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_92c2d297-5866-4511-8464-8e93f36bef9d"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>5feBavFWWDyK4VZrEzKX/HHoLT7CGJEnhILGhm40fvffXhdtxzK94+TrMcyt92jmVJATpAhjT3tP
+ZYI5W878uQ==</DigestValue></Reference></SignedInfo><SignatureValue>SwogltrQSYRjJEg1rcWJpxJ9seBgB1OSPTiKxkzZ3+8bVBHLcxqyiBFmdKCQF8LMNvgToqjC30ce
+POMPW+KhjBWyVmqLXl508Vzv25g+R5kehQlj94wau+agz3GSrYGdKFNCe+h/X4tmF1h7GuCtUUmv
+Z6/UD99JGv4uNSrv2BJa1731IkiGv2Jlk/7SYqaxB7F/C/k9A7vlXpU9Oc81YKyj02RPuV1zGegd
+1U2QPvM6JCBoNl6r+DLz5lk+THGAVPOz2LhdF1UQiX6M/HVaZVlHwUILmMrl0dFlw0SfZLd2FIJP
+MkSyRe87r4OO4wSs1u+rgFx99OKAj0GDxjsyiQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_92c2d297-5866-4511-8464-8e93f36bef9d" Target="#_e80d88aa-829a-4e50-bc59-348986daa5bc"><Timestamp>2021-04-22 14:26:24</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
