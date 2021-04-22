@@ -9,6 +9,7 @@
   <name>TEST2 Codes Master</name>
   <url>http://www.talend.org/</url>
   <modules>
+    <module>../../TEST1/poms</module>
     <module>code/beans</module>
     <module>code/routines</module>
   </modules>
