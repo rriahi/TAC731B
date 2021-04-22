@@ -1,7 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<root t='190' id='1' V190='11' inStruct='' outStruct='' nextMap='' V1='4' name='t' incarnation='3'>
+<root t='190' id='1' V190='11' inStruct='Structures/test.xml' outStruct='Structures/test.xml' inputRep='172' outputRep='172' nextMap='' inputStructUserName='test' outputStructUserName='test' V1='4' name='t' incarnation='61'>
+  <inputMapElem t='200' id='4' V200='8' input='true' structElemExists='true' usedCount='5' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='root'>
+    <mapNode t='190' idref='1'/>
+    <child t='200' id='5' V200='8' input='true' structElemExists='true' usedCount='2' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='a'>
+      <mapNode t='190' idref='1'/>
+    </child>
+  </inputMapElem>
+  <outputMapElem t='200' id='6' V200='8' structElemExists='true' usedCount='7' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' V1='4' name='root'>
+    <mapNode t='190' idref='1'/>
+    <loop>SimpleLoop([autoAdded="true"],in$/root,{Filter},{Sort Keys},{Contexts})</loop>
+    <child t='200' id='7' V200='8' structElemExists='true' usedCount='3' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='a'>
+      <mapNode t='190' idref='1'/>
+      <value>in$/root/a</value>
+    </child>
+  </outputMapElem>
+  <inputRepRuntime t='692' id='8' V692='1' V690='1'>
+  </inputRepRuntime>
+  <outputRepRuntime t='692' idref='8'/>
   <valueSets></valueSets>
+  <inputXmlRepRuntime t='692' idref='8'/>
+  <outputXmlRepRuntime t='692' idref='8'/>
   <child t='165' id='2' V1='4' name='Document Bindings'>
+    <child t='166' id='9' V166='5' docType='1' V1='4' name='in$/root'>
+      <elemNode t='200' idref='4'/>
+    </child>
+    <child t='166' id='10' V166='5' docType='2' V1='4' name='out$/root'>
+      <elemNode t='200' idref='6'/>
+    </child>
   </child>
   <child t='201' id='3' V1='4' name='Inherits From'>
   </child>
