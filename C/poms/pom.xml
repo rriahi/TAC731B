@@ -9,7 +9,6 @@
   <name>C Codes Master</name>
   <url>http://www.talend.org/</url>
   <modules>
-    <module>../../D/poms</module>
     <module>code/beans</module>
     <module>code/routines</module>
   </modules>
